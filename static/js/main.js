@@ -36,19 +36,37 @@ function renderCategoryCard(category) {
 
 /**
  * Mahsulot kartochkasi — premium ko'rinishda
- * SVG icon + gradient mesh background
+ *
+ * Image strategy:
+ * - product.image bor   -> <img> (loading="lazy" + alt + onerror fallback)
+ * - product.image yo'q  -> SVG icon (icons.js'dan)
+ *
+ * onerror — agar rasm yuklanmasa (404, network), JS avtomatik SVG'ga o'tkazadi
  */
 function renderProductCard(product) {
   const isOutOfStock = !product.in_stock;
   const hasDiscount = product.old_price !== null;
 
+  // Image vs Icon: ternary bilan tanlaymiz, lekin SVG'ni har doim DOM'da
+  // qoldiramiz (display:none) — onerror bo'lganda ko'rsatish uchun.
+  const imageHtml = product.image
+    ? `<img src="${product.image}"
+            alt="${product.name}"
+            loading="lazy"
+            class="product__photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+       <div class="product__icon" style="display:none">
+         ${getProductIcon(product.icon_id)}
+       </div>`
+    : `<div class="product__icon">
+         ${getProductIcon(product.icon_id)}
+       </div>`;
+
   return `
     <article class="product ${isOutOfStock ? 'product--out-of-stock' : ''}"
              data-id="${product.id}">
       <div class="product__image">
-        <div class="product__icon">
-          ${getProductIcon(product.icon_id)}
-        </div>
+        ${imageHtml}
 
         ${product.badge
           ? `<span class="product__badge product__badge--${product.badge}">${product.badge}</span>`
