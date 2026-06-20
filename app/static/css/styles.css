@@ -1,0 +1,419 @@
+/* ========================================
+   SOF LUQMA — DESIGN TOKENS
+   ======================================== */
+:root {
+    --brand-green: #2E8B3D;
+    --brand-green-dark: #1F6B2A;
+    --brand-green-light: #E8F5E9;
+    --accent-yellow: #F5B81C;
+    --accent-yellow-light: #FFF8E1;
+
+    --bg-cream: #FAF7F0;
+    --bg-white: #FFFFFF;
+    --nav-dark: #1A3A1F;
+
+    --text-primary: #1A2E22;
+    --text-secondary: #6B7C72;
+    --text-muted: #9AA8A0;
+
+    --shadow-soft: 0 4px 20px rgba(46, 139, 61, 0.08);
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+    --shadow-icon: 0 4px 14px rgba(46, 139, 61, 0.12);
+    --shadow-icon-active: 0 8px 22px rgba(46, 139, 61, 0.40);
+    --shadow-nav: 0 -10px 30px rgba(26, 58, 31, 0.25);
+}
+
+/* ========================================
+   BASE
+   ======================================== */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-primary);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.page { display: none; animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1); padding-bottom: 11rem;}
+.page.active { display: block; }
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shadow-soft { box-shadow: var(--shadow-soft); }
+
+/* ========================================
+   HEADER
+   ======================================== */
+header img {
+    filter: drop-shadow(0 2px 6px rgba(46, 139, 61, 0.15));
+    transition: transform 0.3s ease;
+}
+header img:active { transform: scale(0.97); }
+
+/* ========================================
+   KATEGORIYALAR — 3D PREMIUM ICON CARDS
+   ======================================== */
+#cat-list {
+    scroll-padding: 1rem;
+    scroll-snap-type: x proximity;
+}
+
+.cat-card {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.5rem 0.25rem;
+    min-width: 82px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease;
+}
+
+.cat-card:active { transform: scale(0.93); }
+
+/* Icon konteyner — 3D emoji uchun "tag" ko'rinishi */
+.cat-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #FFFFFF 0%, #F5F9F5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-icon);
+    border: 1.5px solid rgba(46, 139, 61, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Icon ichidagi 3D PNG */
+.cat-icon img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    /* Premium drop-shadow — 3D his uyg'otadi */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    /* Pixel-perfect render */
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.cat-card:active .cat-icon img {
+    transform: scale(0.9);
+}
+
+.cat-name {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: center;
+    max-width: 82px;
+    line-height: 1.25;
+    transition: color 0.2s ease;
+}
+
+/* === ACTIVE STATE — yashil glow + icon kattalashadi === */
+.cat-card.active-cat .cat-icon {
+    background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+    border-color: var(--brand-green-dark);
+    box-shadow: var(--shadow-icon-active);
+    transform: translateY(-3px);
+}
+
+.cat-card.active-cat .cat-icon img {
+    transform: scale(1.08);
+    /* Yashil fon ustida ko'rinishi uchun kuchliroq shadow */
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+}
+
+.cat-card.active-cat .cat-name {
+    color: var(--brand-green-dark);
+    font-weight: 700;
+}
+
+/* Sub-active glow effekt — pastida nuqta */
+.cat-card.active-cat .cat-icon::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-yellow);
+    box-shadow: 0 0 8px var(--accent-yellow);
+}
+
+/* ========================================
+   PRODUCT CARDS
+   ======================================== */
+.product-card {
+    background: var(--bg-white);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(46, 139, 61, 0.06);
+}
+
+.product-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.product-card .organic-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: var(--brand-green);
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* ========================================
+   BOTTOM NAVIGATION
+   ======================================== */
+.bottom-nav {
+    background: linear-gradient(135deg, var(--nav-dark) 0%, #0F2614 100%);
+    box-shadow: var(--shadow-nav);
+    backdrop-filter: blur(10px);
+}
+
+.nav-item {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.nav-item.active {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.nav-item.active .icon-container {
+    position: relative;
+}
+
+.nav-item.active .icon-container::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 3px;
+    background: var(--accent-yellow);
+    box-shadow: 0 0 12px var(--accent-yellow);
+    border-radius: 999px;
+}
+
+#cart-badge {
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none;
+    border: 2px solid var(--nav-dark);
+}
+
+#cart-badge.bump {
+    animation: badgeBump 0.4s ease;
+}
+
+@keyframes badgeBump {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+}
+
+/* ========================================
+   COUNT BUTTONS
+   ======================================== */
+.count-btn {
+    width: 30px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0 !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    background: var(--brand-green-light);
+    color: var(--brand-green-dark);
+    border: none;
+    transition: all 0.15s ease;
+}
+
+.count-btn:active {
+    background: var(--brand-green);
+    color: white;
+    transform: scale(0.92);
+}
+
+/* ========================================
+   PRIMARY CTA
+   ======================================== */
+.btn-primary {
+    background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+    color: white;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 14px rgba(46, 139, 61, 0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(46, 139, 61, 0.3);
+}
+
+/* ========================================
+   FORM INPUT — Cart va boshqa form'lar uchun
+   ======================================== */
+.cart-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: #F9FAFB;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+}
+
+.cart-input:focus {
+    outline: none;
+    background: white;
+    border-color: var(--brand-green);
+    box-shadow: 0 0 0 3px rgba(46, 139, 61, 0.12);
+}
+
+.cart-input::placeholder {
+    color: var(--text-muted);
+}
+
+/* ========================================
+   LOCATION BUTTON — GPS va Xarita tugmalari
+   ======================================== */
+.location-btn {
+    padding: 10px 14px;
+    background: var(--brand-green-light);
+    color: var(--brand-green-dark);
+    border: 1.5px dashed var(--brand-green);
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.location-btn:active {
+    transform: scale(0.97);
+    background: #D4EDDA;
+}
+
+.location-btn.success {
+    background: var(--brand-green);
+    color: white;
+    border-style: solid;
+    border-color: var(--brand-green-dark);
+}
+
+.location-btn.loading {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* ========================================
+   MAP SHEET — Bottom sheet xaritasi
+   ======================================== */
+.map-sheet-header {
+    padding: 16px 20px 12px;
+    text-align: center;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    background: #E8F5E9;
+}
+
+/* Leaflet'ning marker icon URL'lari relative path bilan keladi —
+   ba'zi paytda buzilishi mumkin. Default markerni clean qilamiz. */
+.map-container .leaflet-control-attribution {
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.map-info {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #FAFAFA;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.map-coords {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.map-coords-text-active {
+    color: var(--brand-green-dark) !important;
+    font-weight: 600;
+}
+
+.map-locate-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--brand-green);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(46, 139, 61, 0.3);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.map-locate-btn:active {
+    transform: scale(0.92);
+}
+
+.map-actions {
+    padding: 16px 20px 24px;
+}

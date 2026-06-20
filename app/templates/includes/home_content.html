@@ -1,0 +1,128 @@
+{% load static %}
+
+<div id="home-page" class="page active px-4 space-y-6">
+
+    <header class="flex justify-between items-center py-3 -mx-4 px-4 bg-white">
+        <img src="{% static 'img/logo.jpg' %}" alt="Sof Luqma" class="h-12 object-scale-down">
+        <div class="flex flex-col items-end">
+            <span class="text-[10px] text-gray-500 font-medium">Yetkazib berish</span>
+            <span class="text-xs font-bold text-gray-800 flex items-center gap-1">
+                <svg class="w-3 h-3 text-[var(--brand-green)]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                          clip-rule="evenodd"/>
+                </svg>
+                Toshkent
+            </span>
+        </div>
+    </header>
+
+    <div class="relative rounded-3xl overflow-hidden h-36 shadow-soft">
+        <div id="banner-carousel" class="w-full h-full relative">
+            {% for banner in banners %}
+            <img src="{{ banner.image.url }}"
+                 class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 {% if forloop.first %}opacity-100{% else %}opacity-0{% endif %}"
+                 alt="Banner" loading="lazy">
+            {% endfor %}
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="font-extrabold text-lg text-gray-900">Kategoriyalar</h3>
+            <span class="text-xs text-[var(--brand-green)] font-semibold">Tabiiy & Organik 🌿</span>
+        </div>
+
+        <div id="cat-list" class="flex space-x-3 overflow-x-auto no-scrollbar pb-2 -mx-4 px-4">
+            <button class="cat-card active-cat" data-category-slug="all">
+                <div class="cat-icon">
+                    <img src="{% static 'img/icons/all.png' %}" alt="Hammasi" loading="lazy">
+                </div>
+                <span class="cat-name">Hammasi</span>
+            </button>
+
+            {% for cat in categories %}
+            <button class="cat-card" data-category-slug="{{ cat.slug }}">
+                <div class="cat-icon">
+                    <img src="{{ cat.icon_url }}" alt="{{ cat.name }}" loading="lazy">
+                </div>
+                <span class="cat-name">{{ cat.name }}</span>
+            </button>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section>
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="font-extrabold text-lg text-gray-900">Mahsulotlar</h3>
+        </div>
+
+        <div id="food-grid" class="grid grid-cols-2 gap-3 pb-4"></div>
+
+        <div id="load-more-trigger" class="h-10 flex items-center justify-center text-xs text-gray-400">
+            Yana yuklanmoqda...
+        </div>
+    </section>
+</div>
+
+<div id="product-detail-modal" class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detail-name">
+    <div class="detail-backdrop" data-detail-close></div>
+
+    <div class="detail-sheet" id="detail-sheet">
+        <div class="detail-topbar">
+            <div class="detail-handle" id="detail-handle"></div>
+
+            <button class="detail-close-btn" data-detail-close aria-label="Yopish">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6l-12 12"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="detail-image-wrap">
+            <img id="detail-img" src="" alt="">
+            <div id="detail-organic-badge" class="organic-badge hidden">
+                <span>🌿</span><span>ORGANIC</span>
+            </div>
+            <div class="detail-image-fade"></div>
+        </div>
+
+        <div class="detail-content">
+            <span id="detail-cat" class="detail-cat-tag"></span>
+            <h2 id="detail-name" class="detail-name"></h2>
+
+            <div class="detail-price-card">
+                <div class="detail-price-meta">
+                    <span id="detail-price" class="detail-price"></span>
+                    <span id="detail-unit" class="detail-unit"></span>
+                </div>
+
+                <div class="detail-qty-group">
+                    <button class="count-btn detail-qty-btn" data-detail-minus aria-label="Kamaytirish">−</button>
+                    <span id="detail-qty" class="detail-qty">1</span>
+                    <button class="count-btn detail-qty-btn" data-detail-plus aria-label="Ko‘paytirish">+</button>
+                </div>
+            </div>
+
+            <div id="detail-description-block" class="detail-description-block">
+                <h3 class="detail-section-title">Mahsulot haqida</h3>
+                <p id="detail-description" class="detail-description"></p>
+            </div>
+
+            <button class="detail-cta" data-detail-add>
+                <span class="detail-cta-icon">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17"/>
+                    </svg>
+                </span>
+                <span class="detail-cta-text">Savatga qo'shish</span>
+                <span class="detail-cta-sep">•</span>
+                <span id="detail-total"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+{{ products_data|json_script:"products-data" }}

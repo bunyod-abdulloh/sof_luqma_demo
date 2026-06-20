@@ -1,0 +1,1558 @@
+{
+  "Toshkent shahar": [
+    {
+      "filial": "YAKKASAROY",
+      "manzil": "Yakkasaroy tumani, Bobur ko'chasi 22 Ml:Tojmahal restorani"
+    },
+    {
+      "filial": "QUSHBEGI (SKLAD)",
+      "manzil": "Qushbegi massivi, kichik halqa yo'li 23 uy"
+    },
+    {
+      "filial": "YAKKASAROY 2",
+      "manzil": "Yakkasaroy tumani, Shota Rustaveli ko'chasi 122-uy, 42-xona"
+    },
+    {
+      "filial": "QUSHBEGI (PVZ)",
+      "manzil": "Yakkasaroy t, Qushbegi daxasi, 2-uy, Or:Masjid qarshisida"
+    },
+    {
+      "filial": "JANUBIY VOKZAL",
+      "manzil": "Yakkasaroy tumani, Kichik halqa yo'li k, 22A-uy"
+    },
+    {
+      "filial": "YAKKASAROY ASKIYA",
+      "manzil": "Yakkasaroy t, Shota Rustaveli k, 55 Or:Askiya bozor qarshisi"
+    },
+    {
+      "filial": "UCHTEPA",
+      "manzil": "TASHKENT, UCHTEPA, 24-kvartal, Lutfiy k, 2-A uy"
+    },
+    {
+      "filial": "O'RIKZOR1",
+      "manzil": "Uchtepa tumani, O'rikzor bozor 4 blok 59-do'kon"
+    },
+    {
+      "filial": "FARHOD",
+      "manzil": "Farhod Avto ehtiyot qismlari bozori G 9-A-do'kon"
+    },
+    {
+      "filial": "O'RIKZOR 2",
+      "manzil": "O`rikzor bozori, 4-blok 42-2 do'kon"
+    },
+    {
+      "filial": "UCHTEPA 2",
+      "manzil": "UCHTEPA, 12-kvartal, 41 uy. Or: EVOS yonida"
+    },
+    {
+      "filial": "FARHOD CHORRAHA",
+      "manzil": "Uchtepa t, Farhod k, 6a Or: Havas super market yonida"
+    },
+    {
+      "filial": "ARCHA KO'CHA",
+      "manzil": "Uchtepa t, 14-mavze, 14-uy, 13-xonodon Or:\"SQB\" Bank yonida"
+    },
+    {
+      "filial": "BESHQAYRAG'OCH",
+      "manzil": "Uchtepa t, Beshqayrag'och k, 276-uy Or: Ginekologiya bo'limi"
+    },
+    {
+      "filial": "DEPO MALL",
+      "manzil": "Uchtepa t, Katta Kani k, 22-uy Or:Depo mall"
+    },
+    {
+      "filial": "SHAYXONTOHUR",
+      "manzil": "TASHKENT, ul. Furkat 6. Mo'ljal: Xadra,Asaka Bankni orqasi"
+    },
+    {
+      "filial": "MALIKA BOZOR",
+      "manzil": "Shayxontohur t Ko'rgazma k 36 uy or:Mahmud kabob roparasida"
+    },
+    {
+      "filial": "HUVAYDO",
+      "manzil": "Shayhontohur t, Huvaydo m, 14 kv, Onkologiya markazi yonida"
+    },
+    {
+      "filial": "IBN SINO",
+      "manzil": "Shayxontohur t, Yoqub Ziyoev k,5  uy Or:Safiya do'koni"
+    },
+    {
+      "filial": "ALISHER NAVOIY METRO",
+      "manzil": "Shayxontohur tumani, Navoiy ko'chasi, 69-b"
+    },
+    {
+      "filial": "HUVAYDO 2",
+      "manzil": "Shayxontohur t, Beruniy k, 12-uy Or:Eco bozor yonida"
+    },
+    {
+      "filial": "GULOBOD",
+      "manzil": "Shayxontohur t, Uyg'ur k 4-uy Or:Xotam moyka"
+    },
+    {
+      "filial": "CHORSU KIYIM BOZOR",
+      "manzil": "Shayxontohur t, Zayqaynar k, Or:24-qator 431-do'kon 42-uy"
+    },
+    {
+      "filial": "CHORSU GOLD SENTR",
+      "manzil": "Shayxontohur t, Chorsu bozor, Gold Sentr Or:72-do'kon"
+    },
+    {
+      "filial": "TOSHMI CHORRAHA",
+      "manzil": "Shayxontohur t, Jar Ariq ko'chasi Or: N.A.Ko'ksaroy hospital"
+    },
+    {
+      "filial": "SAMARQAND DARVOZA",
+      "manzil": "Toshkent shShayxontohur tSamarqand Darvoza k1uyOr:JFA stom"
+    },
+    {
+      "filial": "MALIKA BOZOR 2",
+      "manzil": "Shayxontoxur tumani Malika bozori Or:2C blok"
+    },
+    {
+      "filial": "OLMAZOR",
+      "manzil": "Olmazor t, Talabalar ko'chasi 81/1, Ml:Kamolaxon supermarket"
+    },
+    {
+      "filial": "ESKI SHAHAR",
+      "manzil": "Olmazor tumani, Langar ko'chasi, 76a-uy,or:Versal to'yxonasi"
+    },
+    {
+      "filial": "QORAQAMISH",
+      "manzil": "Olmazor t, Qoraqamish-2 ko'chasi, Or: Qoraqamish avtodrom"
+    },
+    {
+      "filial": "KELES YO'LI",
+      "manzil": "Olmazor t, Keles yo'li k, Or:Safia yonida"
+    },
+    {
+      "filial": "SEBZOR",
+      "manzil": "Olmazor t, Sebzor k, 1-uy Or: NBU yaaqinida"
+    },
+    {
+      "filial": "SAG'BON",
+      "manzil": "Olmazor t, Sag'bon k, 80-uy Or:Eski Qo'shtut to'yxonasi"
+    },
+    {
+      "filial": "QORAQAMISH 2",
+      "manzil": "Olmazor t, Qoraqamish 2, 8-uy Or: Alo to'yxona qarshisi"
+    },
+    {
+      "filial": "QORASAROY",
+      "manzil": "Qorasaroy ko'chasi 2-uy, 39-xonadon"
+    },
+    {
+      "filial": "SERGELI",
+      "manzil": "Sergili t, k:Yangi Sergeli 8A, 3-uy,74-xona Ml: Mediapark"
+    },
+    {
+      "filial": "SERGELI 4-BEKAT",
+      "manzil": "Sergeli, Shokir ariq k, 100-uy Or:Ozoda shifo klinikasi"
+    },
+    {
+      "filial": "YUNUSOBOD (SHAXRISTON)",
+      "manzil": "Yunusobod t, A.Temur k, 115A uy Or:Korzinka qarshisida"
+    },
+    {
+      "filial": "UNIVERSAM YUNUSOBOD",
+      "manzil": "Yunusabad  kv 8, 22-uy, 50-xona, Ml:Billur to'yxonasi"
+    },
+    {
+      "filial": "OLOY",
+      "manzil": "Yunusobod tumani, Kashgar mavzesi,1-uy,22-xonadon"
+    },
+    {
+      "filial": "YUNUSOBOD GIDROMITSENTR",
+      "manzil": "Yunusobod t, Osiyo k, 21 uy Or:Gidromitsentr chorrahasi"
+    },
+    {
+      "filial": "MEGA PLANET",
+      "manzil": "Yunusobod t, 11-Mav, 16-uy Or:KINGSMAN SPORT qarshisida"
+    },
+    {
+      "filial": "BODOMZOR",
+      "manzil": "Yunusobod t Bogishamol k 33A Or: \"TATU\" yonida"
+    },
+    {
+      "filial": "SAMPI",
+      "manzil": "Yunusobod t TashGRESS mavzesi 21-uy Or:Sampi Korzinka"
+    },
+    {
+      "filial": "TURKISTON METRO",
+      "manzil": "Yunusobod t Ahmad Donish k 5-uy Or:Mikro Med Lor"
+    },
+    {
+      "filial": "YUNUSOBOD SAMARA",
+      "manzil": "Yunusobod t, 13-mavze, 53-uy Or:\"Gamlet\" kafe yonida"
+    },
+    {
+      "filial": "ORIENT BUSSINES SENTR",
+      "manzil": "Yunusobod t, Oloy bozor k, Or:Gyote Instituti"
+    },
+    {
+      "filial": "XALQARO BUSINESS MARKAZI",
+      "manzil": "Yunsobod t prospekt A.Temur 107-B Or:"
+    },
+    {
+      "filial": "MIROBOD",
+      "manzil": "TASHKENT, Afrosiab ko'cha 6. or. Grand treyd biznes sentr"
+    },
+    {
+      "filial": "SHIMOLIY VOKZAL",
+      "manzil": "Mirobod tumani, Oybek ko'chasi, 59-1 uy"
+    },
+    {
+      "filial": "YANGI QO'YLIQ",
+      "manzil": "Mirobod t, Qo'yliq k, Or: Imperial restorani yonida"
+    },
+    {
+      "filial": "SARAKULKA",
+      "manzil": "Mirobod t, Mehrjon, k, 45-uy, 79 kv Or:Dilkash kafe roparasi"
+    },
+    {
+      "filial": "RISOVIY",
+      "manzil": "Toshkent shMirobod tFargona yoli kOr:Risoviy bozor"
+    },
+    {
+      "filial": "MAKSIM GORKIY",
+      "manzil": "TASHKENT, Buyuk ipak yuli k, 123 Or: Sayohat mehmonxona"
+    },
+    {
+      "filial": "PARKENT",
+      "manzil": "Mirzo Ulug'bek t,Parkent k 11or:Aroma medik bozor roparasi"
+    },
+    {
+      "filial": "TTZ",
+      "manzil": "Mirzo Ulug'bek tumani, Buyuk Ipak yo'li ko'chasi, 481a-uy"
+    },
+    {
+      "filial": "MIRZO ULUG'BEK",
+      "manzil": "Mirzo Ulug'bek t, Kattadarxon k 1/8 Or: Digital Universitet"
+    },
+    {
+      "filial": "MIRZO ULUG'BEK CHIMGAN",
+      "manzil": "Mirzo Ulugbek t, Yalangoch d, 67-uy Or:Chimgan Hills"
+    },
+    {
+      "filial": "MAKSIM GORKIY 2",
+      "manzil": "Mirzo Ulugbek t, Buyuk ipak y, Or:Sayoxat mehmonxonasi"
+    },
+    {
+      "filial": "S1(MARKAZ)",
+      "manzil": "M.Ulug'bek t, Buyuk Ipak yo'li k, 13-uy Or:Orris parfumeriya"
+    },
+    {
+      "filial": "LUNACHARSKIY",
+      "manzil": "MIrzo Ulug'bek t, Buyuk ipak yo'li k, 276-uy Or:Avto Servis"
+    },
+    {
+      "filial": "MIRZO ULUG'BEK IT-PARK",
+      "manzil": "Mirzo Ulugbek tumani Mominova kochasi 7-uy 32"
+    },
+    {
+      "filial": "FERUZA MASSIV",
+      "manzil": "Mirzo Ulug'bek t, Feruza k, Or:Mega school"
+    },
+    {
+      "filial": "QO'YLIQ",
+      "manzil": "TASHKENT, Fargona yuli  k, 4-uy, 3-xona or: naprotiv Bazar"
+    },
+    {
+      "filial": "KADISHEVA",
+      "manzil": "Yashnobod tumani, 2-Aviasozlar mavzesi,40-uy,2-xonadon"
+    },
+    {
+      "filial": "MAHTUMQULI",
+      "manzil": "Yashnabod t, Mahtumquli k, 117 Or:Korzinka Aviator"
+    },
+    {
+      "filial": "LISUNOVA",
+      "manzil": "Yashnobod Qorasuv k, 33 Or:Korzinka"
+    },
+    {
+      "filial": "ROHAT",
+      "manzil": "Yashnabod t, Ohongaron shossesi, 105-uy Or: Rohat krugi"
+    },
+    {
+      "filial": "KADISHEVA 2",
+      "manzil": "Yashnabod t, Aviasozlar k, Or::\"Lady Fitness\" yonida"
+    },
+    {
+      "filial": "ROHAT 2",
+      "manzil": "Yashnabod tOxangaron shox k 40/6-uy Or:Centara kafe roparas"
+    },
+    {
+      "filial": "OQTEPA",
+      "manzil": "Chilonzor tumani,7-mavze,33-uy, Ml:Dentmed stom"
+    },
+    {
+      "filial": "ABU SAXIY",
+      "manzil": "Bunyodkor K 156A Ye-blok,magazin Ye154"
+    },
+    {
+      "filial": "BEK BARAKA",
+      "manzil": "Bek baraka bozori, 3-blok, 11-qator, 608-do'kon"
+    },
+    {
+      "filial": "CHILONZOR",
+      "manzil": "Chilonzor t, 1-mavze 59-uy, Ml:Elektroset"
+    },
+    {
+      "filial": "CHO'PONOTA",
+      "manzil": "Chilonzor,Dilobod MFY,6-mavze,44-uy,27-xona.or:Xo'jalik sudi"
+    },
+    {
+      "filial": "ALGORITM",
+      "manzil": "Chilonzor t, Guliston k, 59/2 uy Or: Ahmad Jo'ja ro'parasi"
+    },
+    {
+      "filial": "CHILONZOR PARLAMENT",
+      "manzil": "Chilonzor t, Al-Xorazmiy k, 17 kv 46 Or:Al-Xorazmiy krugi"
+    },
+    {
+      "filial": "BEK BARAKA 2",
+      "manzil": "Bek baraka bozori, 11-qator, 770-do'kon"
+    },
+    {
+      "filial": "DO'STLIK BOZOR",
+      "manzil": "Dostlik bozori, 41-2-35 Mo'ljal: Ipodrom bozori yonida"
+    },
+    {
+      "filial": "ALGORITM 2",
+      "manzil": "Chilonzor t, So'galli k, 25-uy Or: Safia qarshisida"
+    },
+    {
+      "filial": "NOVZA",
+      "manzil": "Chilonzor t, Bunyodkor k, 2A uy Or:Oltin markazi qarshisida"
+    },
+    {
+      "filial": "CHILONZOR METRO",
+      "manzil": "Chilonzor t, 16-mavze, 11-uy Or:Chilonzor gul bozor qarshisi"
+    },
+    {
+      "filial": "ALFA SAVDO MARKAZI BTS",
+      "manzil": "ALFA TRADE CENTER 1 etaj  41- dokon"
+    },
+    {
+      "filial": "QO'QON BOZOR",
+      "manzil": "Toshkent shaharChilonzor tumanOr:Ippodrom Qoqon bozor"
+    },
+    {
+      "filial": "QATORTOL",
+      "manzil": "Qatortol 1-tor ko'cha Or: Oqtepa lavash"
+    },
+    {
+      "filial": "TASHKENT INDEX",
+      "manzil": "Yangihayot t, Rayxon k, C01-blok 1154-do'kon Or: TashINDEX"
+    },
+    {
+      "filial": "YANGI HAYOT SPUTNIK",
+      "manzil": "Yangi Hayot t, Do'stlik k, 2A Or: Shedevr restorani"
+    },
+    {
+      "filial": "YANGI CHOSHTEPA",
+      "manzil": "Yangihayot t Yangi Chochtepa Uzar kochasi 8-uy"
+    },
+    {
+      "filial": "YANGI DARXON",
+      "manzil": "Toshkent shYangi hayot t Navroz k 52 uy Or:JV ASIA TRADE"
+    },
+    {
+      "filial": "BEKTEMIR",
+      "manzil": "Bektemir t, Bektemir k, 92-a uy Or:Bektemir Hostel yonida"
+    },
+    {
+      "filial": "VODNIK",
+      "manzil": "Bektemir t, Vodnik d, 77-uy Or:Ilm-ziyo O'quv markazi yoni"
+    },
+    {
+      "filial": "ULUG'NOR",
+      "manzil": "Ulug'nor t, Shaxriobod k, 20-uy. Or:Uzum Market yonida"
+    }
+  ],
+  "Toshkent viloyati": [
+    {
+      "filial": "CHIRCHIQ BOZOR",
+      "manzil": "CHIRCHIK, Navoiy 222. Or: shkola 10 togrisi"
+    },
+    {
+      "filial": "TROISKIY",
+      "manzil": "Chirchiq sh, Navoiy shoh k, 77v-uy Or: troisk cherkov"
+    },
+    {
+      "filial": "OKTYABR",
+      "manzil": "Chirchiq sh, Amir Temur k 140/4 uy Or:Oktyabr bozor qarshisi"
+    },
+    {
+      "filial": "CHIRCHIQ NAVOIY",
+      "manzil": "Chirchiq sh, A.Navoiy k, 200-uy Or:\"Sofia\" to'g'risida"
+    },
+    {
+      "filial": "OLMALIQ",
+      "manzil": "Olmaliq sh, Furqat k-si, 3-30 uy Or: Tezkor foto"
+    },
+    {
+      "filial": "OYDIN",
+      "manzil": "Olmaliq sh, Ulug'bek k, 82-uy Or:Shahar shifoxonasi"
+    },
+    {
+      "filial": "ANGREN",
+      "manzil": "Angren sh, Navoiy k, 111-uy Or:Gul bozor"
+    },
+    {
+      "filial": "ANGREN 6/4",
+      "manzil": "Angren sh, Mustaqqilik k, 223-uy Or:Sokin market pasti"
+    },
+    {
+      "filial": "OQQO'RG'ON",
+      "manzil": "Oqqo'rg'on t, Ohunboboyev k, Or: Ishonch do'koni"
+    },
+    {
+      "filial": "YANGIYO'L",
+      "manzil": "Yangiyo'l shahri, Yoshlik k, 54 Or:Dunyo Mall ro'parasi"
+    },
+    {
+      "filial": "BEKOBOD",
+      "manzil": "Bekobod t, Buyuk ipak yo'li k, 466-uy, Or: Hayot to'yxonasi"
+    },
+    {
+      "filial": "14-MIKRARAYON",
+      "manzil": "Bekobod sh, G'afur G'ulom k, Or:Prezident maktabi qarshisi"
+    },
+    {
+      "filial": "OHANGORON",
+      "manzil": "Oxangaron sh, A.Temur k, 10-uy Or: Majnuntol toyxonasi"
+    },
+    {
+      "filial": "NURAFSHON",
+      "manzil": "Toshkent yo'li ko'chasi, 85. Or:Nurafshon Lor Shifo yonida"
+    },
+    {
+      "filial": "NURAFSHON MIKRORAYON",
+      "manzil": "Nurafshon sh,Yuksalish k, 19-uy Or:Mikrorayon bekati"
+    },
+    {
+      "filial": "QIBRAY",
+      "manzil": "Qibray t, A.Navoiy k, Or:Makro ro'parasi"
+    },
+    {
+      "filial": "QIBRAY SELEKSIYA",
+      "manzil": "Qibray t, Universitet k, 37-uy Or:Seleksiya bekat"
+    },
+    {
+      "filial": "DO'RMON",
+      "manzil": "Qibray t, Yuzrobot k, 214-uy Or:Do'rmon bekati"
+    },
+    {
+      "filial": "UCHHO'Z",
+      "manzil": "Qibray t Milliy bog kochasi 4A uy or:Makro yonida"
+    },
+    {
+      "filial": "PARKENT TUMAN",
+      "manzil": "Parkent t, Mustaqillik k, SHOX bekat, Or:Parkent bozor"
+    },
+    {
+      "filial": "G'AZALKENT",
+      "manzil": "Bostinliq t, O'zgarish k, 2/12 uy Or:Istanbul Brend magazin"
+    },
+    {
+      "filial": "QORONG'U BOZOR",
+      "manzil": "G'azalkent sh, Mustaqillik k, 18a-uy Or:Qorong'u bozor"
+    },
+    {
+      "filial": "ZANGIOTA",
+      "manzil": "Zangota t H.Nogmonov 1-uy Or: Eshonguzar bekati"
+    },
+    {
+      "filial": "SOLNECHNIY",
+      "manzil": "Zangiota t, M 39 Or: Solnechniy kanstavar"
+    },
+    {
+      "filial": "NAZARBEK",
+      "manzil": "Zangiota t, Oq uy k, 91-uy Or:Grand toyxonasi"
+    },
+    {
+      "filial": "KELES",
+      "manzil": "Toshkent t, Keles yo'li, 179 Or:Keles bozorchasi"
+    },
+    {
+      "filial": "KO'KSAROY",
+      "manzil": "Toshkent t, Ko'ksaroy MFY Or:Beltepa betonka yo'li"
+    },
+    {
+      "filial": "YUQORI CHIRCHIQ YANGIBOZOR",
+      "manzil": "Yuqori chirchiq t, Yangibozor Or:Akita Universiteti qarshisi"
+    },
+    {
+      "filial": "BARDANKO'L",
+      "manzil": "Yuqori Chirchiq t, Mirobod k, 4/2-uy Or:Bardanko'l uylari"
+    },
+    {
+      "filial": "PISKENT",
+      "manzil": "Piskent tumani Mitan MFY BOBUR K2 UY Arintr FHDYO"
+    },
+    {
+      "filial": "ZAFAR SHAXAR",
+      "manzil": "Bekobod t, Mustaqillik k, 13-uy, 9-xona Or: Orom toyxona"
+    },
+    {
+      "filial": "BO'KA",
+      "manzil": "Boka t, Magistral k, Or:8-bogcha roparasi"
+    },
+    {
+      "filial": "GULBAHOR",
+      "manzil": "Yangiyo'l t, Sh.Rashidov k, 96-uy Or:Gulbahor aylanma yo'li"
+    },
+    {
+      "filial": "CHINOZ",
+      "manzil": "Chinoz Samarqand k,141-uy Or:YPX roparasi"
+    },
+    {
+      "filial": "XOJIKENT",
+      "manzil": "Bo'stonliq t, Nurchilar m 70-uy Or:O'zbekiston pochtasi yoni"
+    },
+    {
+      "filial": "QORASUV (O'RTA CHIRCHIQ)",
+      "manzil": "O'rta chirchiq t, Toshkent yo'li k, 270-uy Or:Billur burger"
+    }
+  ],
+  "Sirdaryo viloyati": [
+    {
+      "filial": "BAXT",
+      "manzil": "Sirdaryo t,Baxt shahri,Ulug'yo'l k,159-uy Or:Turon tuyxonasi"
+    },
+    {
+      "filial": "SIRDARYO",
+      "manzil": "Sirdaryo t, O'zbekiston k, 198-uy Or:Best market"
+    },
+    {
+      "filial": "GULISTON",
+      "manzil": "Guliston sh Ozbekiston k 3-17 Or:Anorbank roparasida"
+    },
+    {
+      "filial": "GULISTON VOKZAL",
+      "manzil": "Guliston sh, Sayxun shox k, 3A Or:Vokzal"
+    },
+    {
+      "filial": "GULISTON ASR",
+      "manzil": "Sirdaryo viloyatGuliston shAsr kochas Or:MCHS roparasida"
+    },
+    {
+      "filial": "YANGIYER",
+      "manzil": "Yangiyer t, Gulshan k, Or:Krug Eski Artel"
+    },
+    {
+      "filial": "XOVOS",
+      "manzil": "Xovos t, Samarqand k Or:Xovos Adliya ro'parasi"
+    },
+    {
+      "filial": "BOYOVUT",
+      "manzil": "Boyovut t, Madaniyat shox k, 60-uy Or:IIB ro'parasida"
+    },
+    {
+      "filial": "SHIRIN",
+      "manzil": "Shirin sh, Ibn sino k, 1 uy Or:Shifoxona ro'parasida"
+    },
+    {
+      "filial": "OQOLTIN",
+      "manzil": "Oqoltin t, Tinchlik k, 37-uy Or:Uztelecom ro'parasi"
+    },
+    {
+      "filial": "SAYXUNOBOD",
+      "manzil": "Sayxunobod t, A.Navoiy k, 19-uy Or:Aziza MTT yoni"
+    },
+    {
+      "filial": "GULISTON TUMAN",
+      "manzil": "Guliston t, Turkiston k, 83-uy, Or: Guliston IIB qarshisi"
+    },
+    {
+      "filial": "SARDOBA",
+      "manzil": "Sardoba t Dostlik k or: Avtoshox bekati yoni"
+    }
+  ],
+  "Jizzax viloyati": [
+    {
+      "filial": "JIZZAX",
+      "manzil": "Jizzax sh,Qassoblik mahallasi Sh. Rashidov ko'chasi,303-uy"
+    },
+    {
+      "filial": "OROM",
+      "manzil": "Jizzax sh, Mustaqillik k, 31-uy Or:\"Orom bouling\" orqasi"
+    },
+    {
+      "filial": "JIZZAX MIKRORAYON",
+      "manzil": "Jizzax shaxar Qaliya k 32-uy 58-x Yangi Carnaval savdo"
+    },
+    {
+      "filial": "ZOMIN",
+      "manzil": "Zomin t, Mustaqillik ko'chasi, 75. Or: Elegant yonida"
+    },
+    {
+      "filial": "STANSIYA JIZ",
+      "manzil": "Sh.Rashidov t, A.Navoiy k, 15-uy Or:Ko'ksaroy ro'parasida"
+    },
+    {
+      "filial": "G'ALLAOROL",
+      "manzil": "G'allaorol t, Mustaqillik k, 13-uy, Or:Ko'hinur to'yxonasi"
+    },
+    {
+      "filial": "PAXTAKOR",
+      "manzil": "Paxtakor t, Oltinkol MFY, 89-uy Or:Oson nasiya majmuasi"
+    },
+    {
+      "filial": "DO'STLIK",
+      "manzil": "Do'stlik t, Sariskov k, 7-uy, Or:Sport maktab chorrahasi"
+    },
+    {
+      "filial": "MIRZACHO'L",
+      "manzil": "Mirzachol tumani Iqbol K 1 dom 1kv"
+    },
+    {
+      "filial": "ZARBDOR",
+      "manzil": "Zarbdor t Lalmikor m A376  Or:Fayz oilaviy kafes"
+    },
+    {
+      "filial": "BAXMAL",
+      "manzil": "Baxmal t, Mustaqillik k, 77-uy  Or:Ishonch magazin"
+    },
+    {
+      "filial": "FORISH",
+      "manzil": "Forish t, Fayzobod k, 2-uy, Or: Xonbandi bekati"
+    },
+    {
+      "filial": "YANGIOBOD",
+      "manzil": "Yangiobod t, Mustaqillik k, 12-uy Or:Tuman hokimyati yonida"
+    },
+    {
+      "filial": "ZAFAROBOD",
+      "manzil": "Zarafobod t, Mustaqillik k, 2-uy Or:Xalq banki yonida"
+    },
+    {
+      "filial": "ARNASOY",
+      "manzil": "Arnasoy t,G'oliblar sh,Alpomish k-3 uy,Or:8-maktab ro'parasi"
+    }
+  ],
+  "Samarqand viloyati": [
+    {
+      "filial": "M BARAKA SAM",
+      "manzil": "SAMARKAND ul.Said Baraka8. or:Avtomoyka"
+    },
+    {
+      "filial": "SAGDIANA",
+      "manzil": "Samarqand sh, Abu Bakir Roziy k, Or:Sagdiana Masjid yonida"
+    },
+    {
+      "filial": "MOTRID QORASUV",
+      "manzil": "Samarqand shaxar, Qorasuv massivi 80-maktab qarshisi"
+    },
+    {
+      "filial": "SAMARKAND SIYOB",
+      "manzil": "Samarqand, Rudakiy k, 277-uy Or:Kohinur Plaza qarshisi"
+    },
+    {
+      "filial": "ULUG'BEK",
+      "manzil": "Samarqand sh, Toshkent trekt k, 55 a uy Or: Afruza hotel"
+    },
+    {
+      "filial": "SAMARQAND",
+      "manzil": "Samarqand sh, Abu Rayxon k, 196-uy Or:Choy fabrikasi"
+    },
+    {
+      "filial": "SAMARQAND YANGIBOZOR",
+      "manzil": "Samarqand sh, U.Joraqulov k, Or:Yangi bozor orqa darvozasi"
+    },
+    {
+      "filial": "FIRDAVSIY",
+      "manzil": "Samarqand sh, Gagarina k, 155 Or:Rustam Shurbo roparasi"
+    },
+    {
+      "filial": "OQDARYO",
+      "manzil": "Oqdaryo t, A.Temur k, 27 uy Or: Hokimiyat"
+    },
+    {
+      "filial": "KATTAQO'RG'ON",
+      "manzil": "Kattaqo'rg'on sh, Qoradaryo ko'chasi 7D uy Or:Bozor roparasi"
+    },
+    {
+      "filial": "KATTAQO'RG'ON (NURXON)",
+      "manzil": "Kattaqorgon sh, A.Navoiy k, Or:Motam saroy ona haykali"
+    },
+    {
+      "filial": "URGUT",
+      "manzil": "Urgut tumani Navoiyshox 1 Mo'ljal: Xumoqush Bayroq"
+    },
+    {
+      "filial": "URGUT YANGIBOZOR BTS",
+      "manzil": "Urgut t, Amir Temur k, Or: Urgut city"
+    },
+    {
+      "filial": "PAYARIQ(CHELAK)",
+      "manzil": "Chelak sh, U.Yusupova k, Or:Temir Hoji Somsa"
+    },
+    {
+      "filial": "NARIMON",
+      "manzil": "Payariq t, Istiqlol k, 2-uy Or:Narimon dehqon bozor yonida"
+    },
+    {
+      "filial": "JOMBOY",
+      "manzil": "Jomboy tumani,Samarqand k-si,19-uy"
+    },
+    {
+      "filial": "JOMBOY SENTR",
+      "manzil": "Jomboy t, Toshkent k, 150-uy Or: Tamanno restorani oldida"
+    },
+    {
+      "filial": "FARXOD SHAHARCHA",
+      "manzil": "Jomboy t, Farxod k, 30a uy Or:Yakkasaroy restorani"
+    },
+    {
+      "filial": "SELSKIY SAM",
+      "manzil": "Usmon Yusupov ko'chasi,137-uy,Or: Amina Go'sht Markazi"
+    },
+    {
+      "filial": "SAMARQAND CITY",
+      "manzil": "U.Jo'raqulov ko'chasi 205-uy Or: Imom A'zam jome masjidi"
+    },
+    {
+      "filial": "OQMASJID",
+      "manzil": "Samarqand t, Toshkent k, 100-uy Or:21-maktab qarshisi"
+    },
+    {
+      "filial": "SUPER",
+      "manzil": "Samarqand t, Narpayskaya k, Or: Dilshod restaurant qarshisi"
+    },
+    {
+      "filial": "EHTIYOT QISMLARI BOZORI",
+      "manzil": "Samarqand t, Ehtiyot qismlari b, Or:1-sektor 14-do'kon"
+    },
+    {
+      "filial": "JUMA SHAHAR",
+      "manzil": "Pastdarg'om tumani, Amir Temur ko'chasi, 32-uy Or:Park"
+    },
+    {
+      "filial": "CHARXIN",
+      "manzil": "Passtdargom t, M.Ulugbek k,12 Or:Oltin Saroy kafe qarshisi"
+    },
+    {
+      "filial": "TOYLOQ",
+      "manzil": "Toyloq t, Bog'ichinor k, 2-uy Or:Konserva zavod ro'parasi"
+    },
+    {
+      "filial": "UKRAJ",
+      "manzil": "Toyloq t, Ukraj maxallasi, 91-uy, Or:Chorshanba bozori"
+    },
+    {
+      "filial": "NARPAY",
+      "manzil": "Narpay t, Mirbozor, Salovat MFY 2-uy Or:Gilam do'kon yonida"
+    },
+    {
+      "filial": "NARPAY OQTOSH",
+      "manzil": "Samarqand vNarpay tOqtosh shIsmoil Buxoriy kOr:Sud yonida"
+    },
+    {
+      "filial": "NUROBOD",
+      "manzil": "Nurobod t, Amir Temur k, 4-uy Or:Uzum market yonida"
+    },
+    {
+      "filial": "ISHTIXON",
+      "manzil": "Ishtixon t, Mustaqillik k, 23-uy, Or: Oybek osh markazi"
+    },
+    {
+      "filial": "MITAN",
+      "manzil": "Ishtixon t, Mitan MSG, A.Temur k, 3-uy Or: Ravza yonida"
+    },
+    {
+      "filial": "BULUNG'UR",
+      "manzil": "Bulungur t, O'zbekiston k,1-uy Shodlik to'yxona ro'parasi"
+    },
+    {
+      "filial": "ZALINA MOST",
+      "manzil": "Bulung'ur t, Lutfiy k, 1-uy Or:Avtobus bekati"
+    },
+    {
+      "filial": "PAYSHANBA KATTAQO'RG'ON",
+      "manzil": "Kattaqorgon t, Payshanba sh, A.Navoiy k Or:Turk brend binosi"
+    },
+    {
+      "filial": "KADAN",
+      "manzil": "Kattaqo'rg'on t, A.Navoiy shox k, Or: DXA ro'parasida"
+    },
+    {
+      "filial": "PAXTACHI",
+      "manzil": "Paxtachi t, Ziyovuddin sh, Or:Hokimyat binosi yonida"
+    },
+    {
+      "filial": "QO'SHROBOT",
+      "manzil": "Qoshrobot t, Bobur k, 10-uy Or:Tuman Avtoshoxbekati"
+    }
+  ],
+  "Farg'ona viloyati": [
+    {
+      "filial": "FARG'ONA",
+      "manzil": "FARGONA ul.Yuksalish 28. or:Korzinka ro`parasida"
+    },
+    {
+      "filial": "FARG'ONA PVZ",
+      "manzil": "Farg'ona sh, Shodiyona MFY, S.Temur k,227A-uy"
+    },
+    {
+      "filial": "Цум",
+      "manzil": "Farg'ona sh, Mustaqillik k, 50-uy. Or: Al-Farg'oniy bog'i"
+    },
+    {
+      "filial": "QIRGULI",
+      "manzil": "Farg'ona sh, Marg'ilon k, 11-uy Or:Milliy gvardiya qarshisi"
+    },
+    {
+      "filial": "QO`QON (CAVUM)",
+      "manzil": "Qo`qon Alisher Navoiy uyi-64.or:Cavum stomatologiya"
+    },
+    {
+      "filial": "QO'QON",
+      "manzil": "Qo'qon shahar,Turkiston ko'chasi, 220-uy"
+    },
+    {
+      "filial": "QO'QON(YANGIBOZOR)",
+      "manzil": "Qo'qon sh, Usmon Nosir k, 67-8-1/7 Or:Yangi bozor qarshisida"
+    },
+    {
+      "filial": "MARG'ILON",
+      "manzil": "ul mustaqillik 439/3 or: tibbiy diagnostika ro'parasida"
+    },
+    {
+      "filial": "TOSHLOQ",
+      "manzil": "Toshloq tumani, Davon ko'chasi, 53-uy"
+    },
+    {
+      "filial": "TOSHLOQ MARKAZ",
+      "manzil": "Toshloq t, A.Navoiy k ,172 Or: Ishonch Kredit oldida"
+    },
+    {
+      "filial": "BESHARIQ",
+      "manzil": "Beshariq t,Oltin Vodiy 190-uy,M-l:Majburiy ijro roʻparasi"
+    },
+    {
+      "filial": "BESHARIQ PEREEZD",
+      "manzil": "Beshariq t,Oltin vodiy 41 or: Osiyo kelinlar salon"
+    },
+    {
+      "filial": "O'ZBEKISTON",
+      "manzil": "Yaypan sh,Turkiston MFY,Turkiston k,Or:Oqtepa,Uzum market"
+    },
+    {
+      "filial": "O'ZBEKISTON AVG'ONBOG'",
+      "manzil": "Ozbekiston t, Avg'onbog' MFY, Or:Avg'onbog' avtostansiya"
+    },
+    {
+      "filial": "OLTIARIQ",
+      "manzil": "Oltiariq tumani, Chinor tagi ko'chasi 2-uy"
+    },
+    {
+      "filial": "XAMZA",
+      "manzil": "Oltiariq t, Obod maxalla k, 1uy Or:Shoxjahon market qarshisi"
+    },
+    {
+      "filial": "QUVA",
+      "manzil": "Farg'ona viloyati, Quva tumani,O'zbek ko'chasi 41-uy"
+    },
+    {
+      "filial": "QUVA MARKAZ",
+      "manzil": "Fargona vQuva tumanMuruvvat kochasOr:Uzum market market"
+    },
+    {
+      "filial": "QO'SHTEPA",
+      "manzil": "Qo'shtepa t, Mustaqillik k, 76-A uy Or:Neurotashxis klinika"
+    },
+    {
+      "filial": "BOG'DOD",
+      "manzil": "Bog'dod t, Olmos k, 115-uy, Or:Bog'dod krugi"
+    },
+    {
+      "filial": "BOG'DOD SENTR",
+      "manzil": "Bog'dod t, Orzu k, 8-uy or: Maxmud Ota choyxonasi"
+    },
+    {
+      "filial": "RISHTON",
+      "manzil": "Rishton t, Farg'ona k, 9-uy Or:Markaziy dorixona ro'parasi"
+    },
+    {
+      "filial": "UCHKO'PRIK",
+      "manzil": "Uchkoprik t, Navrozshox k, Or:Agrobank qarshisida"
+    },
+    {
+      "filial": "YANGIBOZOR(SALANG)",
+      "manzil": "Uchko'prik t, Salang k, Or:Salang metan yonida"
+    },
+    {
+      "filial": "BUVAYDA (YANGIQO'RG'ON)",
+      "manzil": "Buvayda t, Yangiqo'rg'on krug, Chirkay pitak"
+    },
+    {
+      "filial": "BUVAYDA 2",
+      "manzil": "Buvayda t, G'uzar k, 7-uy Or:39-maktab svitafori yonida"
+    },
+    {
+      "filial": "FURQAT",
+      "manzil": "Furqat t, Mustaqillik k, 18uy Or:Tuman masjid yoni"
+    },
+    {
+      "filial": "QUVASOY",
+      "manzil": "Quvasoy sh, Mustaqillik k, 7a-uy Or:Afsona toyxonasi yoni"
+    },
+    {
+      "filial": "QUVASOY YO'LI",
+      "manzil": "Fargona shahriShakarqishloq MFY Quvasoy kochasi35a-uy"
+    },
+    {
+      "filial": "DANG'ARA",
+      "manzil": "Dangara t, Sanoat k, 1-uy Or:Ishonch savdo markazi orqasi"
+    },
+    {
+      "filial": "YOZYOVON",
+      "manzil": "Yozyovon t, Al-Fargona k Or:Xalq banki qarshisida"
+    }
+  ],
+  "Namangan viloyati": [
+    {
+      "filial": "TO'RAQO'RG'ON",
+      "manzil": "To'raqo'rg'on tuman, Al-Farg'oniy ko'chasi, 56 A-uy"
+    },
+    {
+      "filial": "TO'RAQO'RG'ON 2",
+      "manzil": "Namangan vToraqorgon t Kosonsoy k or:Markaziy bozor"
+    },
+    {
+      "filial": "KOSONSOY",
+      "manzil": "Kosonsoy tumani Gulobod ko'chasi. M-l: Vatanparvar binosi."
+    },
+    {
+      "filial": "NAMANGAN",
+      "manzil": "Namangan sh, 6-MKR, G'alaba ko'chasi,2-uy"
+    },
+    {
+      "filial": "NAMANGAN LOLA",
+      "manzil": "Namanagan shahar,Lola MFY,Boburshox street 6v-uy"
+    },
+    {
+      "filial": "SARDOBA NAMAN",
+      "manzil": "Namangan sh, A.Navoiy k, 10-uy Or:Olympus foto markazi yoni"
+    },
+    {
+      "filial": "CHORSU",
+      "manzil": "Namangan sh, Uychi k, 2-uy Or: Chorsu mexmonxonasi"
+    },
+    {
+      "filial": "CHUST",
+      "manzil": "Chust sh. Ipak yo'li ko'chasi Or: Oila market qarshisida"
+    },
+    {
+      "filial": "UCHQO'RG'ON",
+      "manzil": "Uchqo'rg'on tumani,Do'stlik  ko'chasi 34-uy"
+    },
+    {
+      "filial": "UYCHI",
+      "manzil": "Uychi tumani, Beruniy ko'chasi 10-uy"
+    },
+    {
+      "filial": "MINGBULOQ",
+      "manzil": "Mingbuloq tumani, Oybek MFY, Ozodlik ko'chasi"
+    },
+    {
+      "filial": "YANGIQO'RG'ON",
+      "manzil": "Yangiqo'rg'on t, Chortoq ko'chasi,11-uy Or:Voenkamat"
+    },
+    {
+      "filial": "CHORTOQ",
+      "manzil": "Chortoq t, Namangan k, 4 uy Or: Globus dorixonasi"
+    },
+    {
+      "filial": "POP",
+      "manzil": "Pop t, Shabboda k, 27-uy Or:Milliy gvardiya qarshisida"
+    },
+    {
+      "filial": "NORIN",
+      "manzil": "Norin t Beruniy k 20-uy Or:Tez yordam yonida"
+    },
+    {
+      "filial": "NORIN 2",
+      "manzil": "Norin t, Soy bo'yi k, Or:Dr.Oybek stomatologiya qarshisi"
+    },
+    {
+      "filial": "NAMANGAN TUMAN",
+      "manzil": "Namangan t, Nurafshon k, 50-uy Or:22-maktab qarshisida"
+    }
+  ],
+  "Andijon viloyati": [
+    {
+      "filial": "AVTOVOKZAL AND",
+      "manzil": "ANDIJON ul. A.Temur 13, Naprotiv. Avtovokzal"
+    },
+    {
+      "filial": "ESKI SHAHAR AND",
+      "manzil": "Andijon shahar, Mustaqillik Shox  8 uy 2/10"
+    },
+    {
+      "filial": "ANDIJON 1-MKR",
+      "manzil": "Andijon sh, 1-mikrorayon, 8-uy"
+    },
+    {
+      "filial": "ANDIJON 2-MIKRARAYON",
+      "manzil": "Andijon sh, 2-mikrarayon, Nodira k, 1B Or: Issiqlik manbayi"
+    },
+    {
+      "filial": "ANDIJON 3-MKR",
+      "manzil": "Andijon sh, Bobur k, 2a-uy Or:3-mikrorayon bozorcha"
+    },
+    {
+      "filial": "IZBOSKAN",
+      "manzil": "Izboskan t, Naqshband ko'chasi, 5-uy, Or:Krugovoy yonida"
+    },
+    {
+      "filial": "CHUVAMA",
+      "manzil": "Izboskan t, Chuvama q, Topchinor, 10 Or:Masjid qarshisi"
+    },
+    {
+      "filial": "PAXTAOBOD",
+      "manzil": "Paxtaobod t, Amir Temur k, 70-uy Or:Hamkorbank ro'parasi"
+    },
+    {
+      "filial": "MADANIYAT",
+      "manzil": "Paxtaobod t, Maybog'cha k, 2-uy Or:28-maktab qarshisi"
+    },
+    {
+      "filial": "ASAKA",
+      "manzil": "Asaka t. Umid k-si 41 uy or:Texnomart podvali"
+    },
+    {
+      "filial": "ASAKA 2",
+      "manzil": "Asaka t, Humo k, 2 Or:Uzavto Motors kocha chorraxasi"
+    },
+    {
+      "filial": "SHAXRIXON",
+      "manzil": "Shaxrixon tumani, Hamza kocha 1. M-l: AKSHAMNUR restoran"
+    },
+    {
+      "filial": "YANGI SHAHRIXON",
+      "manzil": "Shahrihon t, Chinobod k, 7 Or:Pasport stol yonida"
+    },
+    {
+      "filial": "MARHAMAT",
+      "manzil": "Marhamat tumani, Boburshox ko'chasi, 45-uy"
+    },
+    {
+      "filial": "POLVONTOSH",
+      "manzil": "Marhamat t, Polvontosh, Bobur k, Or:Mini stadion yonida"
+    },
+    {
+      "filial": "XO'JAOBOD",
+      "manzil": "Xo'jaobod tumani,Uzun-ko'cha ko'chasi,Or:Agrobank"
+    },
+    {
+      "filial": "ANDIJON TUMANI",
+      "manzil": "Andijon t, Nayman k, 17-uy Or: Jahon bozori"
+    },
+    {
+      "filial": "KAMOLOT",
+      "manzil": "Andijon t Sayfiobod k 15-uy Or:Kamolot kocha boshi"
+    },
+    {
+      "filial": "KUYGANYOR",
+      "manzil": "Andijon t, Vodiy k, 187-uy Or:Davlat xizmatlari yonida"
+    },
+    {
+      "filial": "ANDIJON TELVIZYONNIY",
+      "manzil": "Andijon t, Telvizyonniy k30-uy Or: Rose collection qatorida"
+    },
+    {
+      "filial": "BULOQBOSHI",
+      "manzil": "Buloqboshi t, M.Ismoiliy k, 63-uy Or:Hakim yodgor to'yxona"
+    },
+    {
+      "filial": "QO'RG'ONTEPA",
+      "manzil": "Qo'rg'ontepa t, Mustaqillik k, 285 Or:41-IDUM ro'parasida"
+    },
+    {
+      "filial": "QORASUV",
+      "manzil": "Qorasuv sh, O'qituvchilar k, 2-uy Or:Akmal Farm yonida"
+    },
+    {
+      "filial": "BALIQCHI",
+      "manzil": "Baliqchi t, Boburshox k, 67-uy Or:Do'stlik savdo markazi"
+    },
+    {
+      "filial": "CHINOBOD",
+      "manzil": "Baliqchi t, Namunaviy k, 134-uy Or:Notarius yonida"
+    },
+    {
+      "filial": "JALAQUDUQ",
+      "manzil": "Jalaquduq t, Dilhush k, 19-uy Or:\"Jome masjid\" roparasi"
+    },
+    {
+      "filial": "OYIM",
+      "manzil": "Jalaquduq t, Qo'chqor Turdiyev k, 4-uy Or:Hamkorbak qarshisi"
+    },
+    {
+      "filial": "OLTINKO'L",
+      "manzil": "Oltinko'l t, Markaz k, 53-uy Or:Prokuratura orqasi"
+    },
+    {
+      "filial": "XONOBOD",
+      "manzil": "Xonobod t, Obod k, 26-uy Or:Dexqon ota magazin"
+    },
+    {
+      "filial": "BO'Z",
+      "manzil": "Boz t, Akmal Ikromov k, 2-uy Or:Ozbegim toyxonasi"
+    }
+  ],
+  "Qashqadaryo viloyati": [
+    {
+      "filial": "QARSHI",
+      "manzil": "KARSHI 5-Mikro rayon ul. Nasaf. or: Nikoh uyi orqa tomoni"
+    },
+    {
+      "filial": "QARSHI (YANGIBOZOR)",
+      "manzil": "Qarshi sh,markaziy savdo paviloni 1/202 or-r Bozor darvozasi"
+    },
+    {
+      "filial": "QARSHI PEDINSTITUT",
+      "manzil": "Qarshi sh, A.Temur k, 110-uy Or: QarDU eski darvozasi yonida"
+    },
+    {
+      "filial": "QARSHI ESKI SHAHAR",
+      "manzil": "Qarshi sh, Islom Karimov k, 347-uy Or:Korzinka qarshisi"
+    },
+    {
+      "filial": "SHAHRISABZ",
+      "manzil": "Shaxrisabz sh. Ipak yoʻli k, 360-uy Or:Yangi Masjid"
+    },
+    {
+      "filial": "SHAHRISABZ TOJMAHAL",
+      "manzil": "Shahrisabz sh, Ipak yo'li k, 278 Or:Tojmahal restoran qarshi"
+    },
+    {
+      "filial": "CHIROQCHI",
+      "manzil": "Chiroqchi tu-ni:mustaqillik ko'cha  mo'l: xalq qabulxonasi"
+    },
+    {
+      "filial": "JAR",
+      "manzil": "Chiroqchi t, Jar k, 45-uy Or:Jar pochtasi ro'parasida"
+    },
+    {
+      "filial": "KITOB",
+      "manzil": "Kitob tumani G.Jo'rayev ko'chasi 21 or:IIB"
+    },
+    {
+      "filial": "ESKI RADDOM",
+      "manzil": "Kitob t, General Jo'rayev k, 87-uy Or:Eski raddom yonida"
+    },
+    {
+      "filial": "MUBORAK",
+      "manzil": "Muborak tumani, Begzod ko'chasi 4-uy Or:Trastbank ATB"
+    },
+    {
+      "filial": "2-MIKRARAYON",
+      "manzil": "Muborak t, 2-mitti tuman daxasi, Or:Dehqon bozor qarshisida"
+    },
+    {
+      "filial": "BESHKENT",
+      "manzil": "Qarshi t, Beshkent, Mustaqillik k, 41 Or:Tuman hokimligi"
+    },
+    {
+      "filial": "G'UZOR",
+      "manzil": "G'uzor t, O'zbekiston k, 57-uy, Or:Kadastr bo'limi ro'parasi"
+    },
+    {
+      "filial": "KOSON",
+      "manzil": "Koson t, Mustaqillik k, 15-uy Or: Universalbank ATB yonida"
+    },
+    {
+      "filial": "YAKKABOG`",
+      "manzil": "Yakkabog' t, Amir Temur k, 25 Or:Comfort plus savdo komleksi"
+    },
+    {
+      "filial": "ECO BOZOR",
+      "manzil": "Yakkabog' t, Ayg'irko'l k, 212-uy Or: Eco bozor yonida"
+    },
+    {
+      "filial": "CHORSHANBE SHAHRISABZ",
+      "manzil": "Shahrisabz t, Zilol k, 1-uy Or: Tuman tibbiyot birlashma"
+    },
+    {
+      "filial": "QAMASHI",
+      "manzil": "Qamashi t, Amir Temur k Or:Izmir magazini yonida"
+    },
+    {
+      "filial": "KO'KDALA",
+      "manzil": "Kokdala t, Erkiv Vohidov k, 38-uy"
+    },
+    {
+      "filial": "DEHQONOBOD",
+      "manzil": "Dehqonobod t, Guliston k 40-uy Or:Tuman shifoxonasi qarshisi"
+    },
+    {
+      "filial": "KASBI",
+      "manzil": "Kasbi t, Mug'lon QFY, 3-mitti t, 5-uy Or:DHM ro'parasi"
+    }
+  ],
+  "Surxondaryo viloyati": [
+    {
+      "filial": "TERMIZ",
+      "manzil": "TERMEZ, A.Navoi k, 21 Or:Restoran \"MALIKA GOLD\""
+    },
+    {
+      "filial": "TERMIZ SENTR",
+      "manzil": "TERMIZ, Sentr Karpov bozori, Istiqlol3/3"
+    },
+    {
+      "filial": "TERMIZ VOZKAL",
+      "manzil": "Termiz sh Ibn Sino k 29-uy Or:Nafis mebel qatorida"
+    },
+    {
+      "filial": "DENOV",
+      "manzil": "DENOV, Sharof Rashidov k, 176 Or: Uzum market yonida"
+    },
+    {
+      "filial": "JARQO'RG'ON",
+      "manzil": "Jarqo'rg'on t, O'zbekiston k, 12-uy Or:Tuman hokimligi yoni"
+    },
+    {
+      "filial": "SURXON",
+      "manzil": "Jarqo'rg'on t, Muqimiy k, 1-uy Or:Univermag yoni"
+    },
+    {
+      "filial": "ANGOR",
+      "manzil": "Surxondaryo viloyati, Angor tumani,At Termiziy ko'chasi"
+    },
+    {
+      "filial": "QUMQO'RG'ON",
+      "manzil": "Qumqo'rg'on t, A.Navoiy k, 19A-uy Or:TuronSavdo Majmuasi"
+    },
+    {
+      "filial": "SHEROBOD",
+      "manzil": "Sherobod t, Mustaqillik k, Or:Toshkent avtoshohbekati"
+    },
+    {
+      "filial": "SHO'RCHI",
+      "manzil": "Sho'rchi t, A. Temur ko'chasi 53-B uy Or:Sho'rchi Shoxbekat"
+    },
+    {
+      "filial": "SARIOSIYO",
+      "manzil": "Sariosiyo t, Mirzo Ulug'bek k, Or:Eski Dombita ro'parasi"
+    },
+    {
+      "filial": "QIZIRIQ",
+      "manzil": "Qiziriq t, Barhayot k Or:Visol to'yxonasi yonida"
+    },
+    {
+      "filial": "BOYSUN",
+      "manzil": "Boysun t, Istiqlol k, 9 Or:Konika binosi"
+    },
+    {
+      "filial": "UZUN",
+      "manzil": "UZUN tumani Yoshlik ko'chasi. Or: Avtoshoxbekat"
+    },
+    {
+      "filial": "OLTINSOY",
+      "manzil": "Oltinsoy t, Oltindala k,10-uy Or:Okean to'yxonasi qarshisi"
+    }
+  ],
+  "Buxoro viloyati": [
+    {
+      "filial": "BUXORO",
+      "manzil": "Buxoro sh,Bahouddin Naqshband 309/1,or:Sherbudin restoran"
+    },
+    {
+      "filial": "BUXORO  5-MKR",
+      "manzil": "A.Somiy k, 6A-17 uy Or:Ped institut ro'parasi"
+    },
+    {
+      "filial": "BUXORO GORGAZ",
+      "manzil": "Buxoro sh, Mustaqilligi k Or:\"Steyk house\" yonida"
+    },
+    {
+      "filial": "BUXORO VOKZAL",
+      "manzil": "Buxoro shahar O.Eshonov ko'chasi 10-uy,9-xonadon"
+    },
+    {
+      "filial": "BUXORO RAYMAG",
+      "manzil": "Buxoro sh, S.Murodov k, 90-uy Or:Mo Salax osh markazi yoni"
+    },
+    {
+      "filial": "CHINAR MALL",
+      "manzil": "Buxoro sh, Alpomish k, 203-uy Or:Chinar Mall"
+    },
+    {
+      "filial": "FAYZOBOD",
+      "manzil": "Buxoro sh, Ashxobod k, 1-7-7-uy Or:Saxarniy klinika"
+    },
+    {
+      "filial": "DILKUSHO",
+      "manzil": "Buxoro sh, Dilkusho k, 268 uy, Or:Kopilka supermarket"
+    },
+    {
+      "filial": "BUXORO KRITIY",
+      "manzil": "Buxoro sh, I.Mo'minov k, 24-uy Or:Buxoro savdo majmuasi"
+    },
+    {
+      "filial": "BUXORO MELEDIYA AVTOBEKATI",
+      "manzil": "Buxoro shI.Karimov kOr:Salom Hayot savdo majmuasi yonida"
+    },
+    {
+      "filial": "KOGON",
+      "manzil": "Kogon sh, Buxoro shox ko'chasi 19-uy,1-xona. IIB ro'parasida"
+    },
+    {
+      "filial": "KOGON VOKZAL",
+      "manzil": "Kogon sh, Mahmud Torobiy k, 49-uy, 3 Or:Street burger"
+    },
+    {
+      "filial": "VOBKENT",
+      "manzil": "Vobkent tumani, Al Buxoriy ko'chasi, M-l:Hokimiyat ro'parasi"
+    },
+    {
+      "filial": "G'IJDUVON",
+      "manzil": "G'ijduvon tumani, Yusuf Hamadoniy ko'chasi,74-uy"
+    },
+    {
+      "filial": "G'IJDUVON 2",
+      "manzil": "Gijduvon t, Ulug'bek k, 130-uy Or:Tez tibbiy yordam orqasi"
+    },
+    {
+      "filial": "GALAOSIYO BUXORO",
+      "manzil": "Galaosiyo sh, Buyuk ipak yo'li k, 21-uy"
+    },
+    {
+      "filial": "MADANIYAT CHORAXXA",
+      "manzil": "Buxoro t, M.Karimov k, 93-uy Or: Madaniyat chorraxasi"
+    },
+    {
+      "filial": "JONDOR",
+      "manzil": "Jondor tumani, Mahmud Torobiy ko'chasi,209-uy"
+    },
+    {
+      "filial": "JONDOR 2",
+      "manzil": "Jondor t, Navgedi k, 1 Or:Jondor savdo majmuasi qarshisi"
+    },
+    {
+      "filial": "PESHKU",
+      "manzil": "Peshku t, Yangi bozor k, 2-uy Or:Velomakon yonida"
+    },
+    {
+      "filial": "QORAKO'L",
+      "manzil": "Qarako'l t, Ulug'bek k, 48-uy Or:15-maktab qarshisida"
+    },
+    {
+      "filial": "SHOFIRKON",
+      "manzil": "Shofirkon t , Mustaqillik k , or:Mohitobon Masjidi"
+    },
+    {
+      "filial": "ROMITAN",
+      "manzil": "Romitan t, Nurafshon k, 6-uy Or:Tosh bar park"
+    },
+    {
+      "filial": "QOROVULBOZOR",
+      "manzil": "Qorovulbozor t, Navoiy k, 12-uy Or: Dehqon bozor"
+    },
+    {
+      "filial": "OLOT",
+      "manzil": "Olot t, Olot shox k, Or: Techno zone"
+    },
+    {
+      "filial": "YANGI HAYOT",
+      "manzil": "Kogon t, Amir Temur k, 63-uy Or:Yangi saroy to'yxonasi"
+    }
+  ],
+  "Navoiy viloyati": [
+    {
+      "filial": "KARMANA",
+      "manzil": "Karmana tumani,Talqoq MFY,Kulollar 8"
+    },
+    {
+      "filial": "NAVOIY",
+      "manzil": "Navoiy sh, I.Karimov 120A-92 Or: Leon bekati ro'parasida"
+    },
+    {
+      "filial": "NAVOI (VOSXOD)",
+      "manzil": "Navoi Sh.Energetik d-1.kv-7 or-r Master Kabob"
+    },
+    {
+      "filial": "NAVOIY (YANGIBOZOR)",
+      "manzil": "Yangibozor. Or: Shirinlik bozori darvozasi qatorida"
+    },
+    {
+      "filial": "NAVOIY (SHODLIK)",
+      "manzil": "Navoiy sh, Shodlik k, 1-uy Or:UVD ro'parsida"
+    },
+    {
+      "filial": "NAVOIY MIB",
+      "manzil": "Navoiy shaharMahmd Torobiy shoh kochas116uy Or:Shahar MIB"
+    },
+    {
+      "filial": "QIZILTEPA",
+      "manzil": "Qiziltepa, \"Sozlab Ol\" Savdo. Or:Istiqlol tuyxona qarshisida"
+    },
+    {
+      "filial": "QIZILTEPA (VANG'OZI)",
+      "manzil": "Qiziltepa t, Vang'ozi k. Or: \"BIR ZUMDA\" oshxona qarshisida"
+    },
+    {
+      "filial": "NAVBAHOR",
+      "manzil": "Navbahor t, Markaziy Beshrabot, Or:Anor kafe qarshisida"
+    },
+    {
+      "filial": "ZARAFSHON",
+      "manzil": "3-kichik tuman, Torgoviy sentr Or:Uzum market ro'parasi"
+    },
+    {
+      "filial": "13-MIKRARAYON",
+      "manzil": "Zarafshon t, 13-mikrarayon, 77-uy Or:Gold supermarket yonida"
+    },
+    {
+      "filial": "NUROTA",
+      "manzil": "Nurota t. U.Yusupova, 69-uy, Or:Tibbiyot birlashmasi yonida"
+    },
+    {
+      "filial": "G'OZG'ON",
+      "manzil": "G'ozg'on sh, Mustaqillik k, 65-uy Or:Dehqon bozor roparasida"
+    },
+    {
+      "filial": "XATIRCHI",
+      "manzil": "Xatirchi t, Navbahor ko'chasi Or:\"Univermag\" orqasida"
+    },
+    {
+      "filial": "UCHQUDUQ",
+      "manzil": "UCHQUDUQ t, A.Temur k, 37-B uy. Or:Qizilqum Jome Masjidi"
+    },
+    {
+      "filial": "KONIMEX",
+      "manzil": "Konimex t, Ibn Sino kochasi. Or:Hokimiyat ro'parasida"
+    }
+  ],
+  "Xorazm viloyati": [
+    {
+      "filial": "URGANCH",
+      "manzil": "URGENCH ul. Al-Xorazmiy 62, or:eski vino zavod chorrahasi"
+    },
+    {
+      "filial": "URGANCH 4-MKR",
+      "manzil": "Urganch sh,Zarbuloq k,1-uy,26-xonadon Or:Stadion chorrahasi"
+    },
+    {
+      "filial": "URGANCH YANGI TUNEL",
+      "manzil": "Urganch sh, Yog'du k, 12A-uy Or:Bozor yangi tunel yoni"
+    },
+    {
+      "filial": "XIVA",
+      "manzil": "Xiva, Yangi Xayot, ul. A.Temur. or-r Prokuratura yonida"
+    },
+    {
+      "filial": "XIVA (STADION)",
+      "manzil": "Xiva sh, Feruz k, 98-uy Or:Xiva stadion ro'parasi"
+    },
+    {
+      "filial": "TUPROQQAL'A",
+      "manzil": "Tuproqqal'a t, Ogahiy k, 3-6 uy, 18 Or:Shahar boshbekati"
+    },
+    {
+      "filial": "XONQA",
+      "manzil": "Xonqa t, Mustaqillik k, 5-uy Or: Xonqa krugi"
+    },
+    {
+      "filial": "GURLAN",
+      "manzil": "Gurlan t, Mustaqillik k, Or: Gurlan dehqon bozori"
+    },
+    {
+      "filial": "XAZORASP",
+      "manzil": "Xazorasp t, Oftob ko'chasi,107-uy, Or: 96-avtobaza"
+    },
+    {
+      "filial": "XAZORASP MARKAZ",
+      "manzil": "Xazorasp t, Navoiy k, Or: Yoshlar bog'i yonida"
+    },
+    {
+      "filial": "BOG'OT",
+      "manzil": "Bog'ot t, O'zbekiston k, 62-uy Or: Kafe Original"
+    },
+    {
+      "filial": "QO'SHKO'PIR",
+      "manzil": "Qo'shkopir t, Sharof Rashidov k, 27uy Or:Eco bozor qarshisi"
+    },
+    {
+      "filial": "SHOVOT",
+      "manzil": "Shovot t, Marifat k, 2-uy Or:SES roparasida"
+    },
+    {
+      "filial": "SHOVOT 2",
+      "manzil": "Xorazim vShovot tPaxtakor mahallasi Or:Temir yol bekati"
+    },
+    {
+      "filial": "YANGIBOZOR XORAZM",
+      "manzil": "Yangi bozor t, Sharshara k Or:Yangi bozor post GAI yonida"
+    },
+    {
+      "filial": "YANGIARIQ",
+      "manzil": "Yangariq k, Al-Xorazmiy k, 18a uy Or:\"Azza med\" klinikasi"
+    },
+    {
+      "filial": "URGANCH RAYSENTR",
+      "manzil": "Urganch t, Mustaqillik k, 28-uy or:Chuqur burger yoni"
+    }
+  ],
+  "Qoraqalpog'iston": [
+    {
+      "filial": "NUKUS",
+      "manzil": "NUKUS. ul. Tatibaeva B/N 22. Orientir: restoran NEO"
+    },
+    {
+      "filial": "NUKUS 26-MKR",
+      "manzil": "Nukus sh,Pirjan Seytov k,1A,44-uy Or:"
+    },
+    {
+      "filial": "QO'NG'IROT",
+      "manzil": "Qo'ng'irot tumani, ul.Beruniy or: Munis market"
+    },
+    {
+      "filial": "QO'NG'IROT 2",
+      "manzil": "Qo'ng'irot t, Nurmuxammedov k,61 Or:Qo'ng'irot tumani gorgaz"
+    },
+    {
+      "filial": "BERUNIY",
+      "manzil": "Beruniy t, Xalqlar do'stligi k, Or:Dinara hotel qarshisi"
+    },
+    {
+      "filial": "BERUNIY BOZOR",
+      "manzil": "Beruniy t, Quruvchilar k, Or:Bozor(Suxrob kafe)"
+    },
+    {
+      "filial": "AMUDARYO",
+      "manzil": "Amudaryo t, Tadbirkorlar k, 11 Or: Eshonbobo Jome masjidi"
+    },
+    {
+      "filial": "TO'RTKO'L",
+      "manzil": "To'rtko'l t, K.Ataniyazov k, 42-uy Or: eski bozor"
+    },
+    {
+      "filial": "ELLIK QAL'A",
+      "manzil": "Ellik qala t, Xalqlar do'stligi k, Or:dehqon bozor 5-dokon"
+    },
+    {
+      "filial": "TAXIATOSH",
+      "manzil": "Taxiatosh t,Kamolot ko'chasi, 35-A uy. Or:Taxiatosh bozori"
+    },
+    {
+      "filial": "XO'JAYLI",
+      "manzil": "Xojayli t, Tandirchi k, 32-uy Or:Avtoturargoh"
+    },
+    {
+      "filial": "CHIMBOY",
+      "manzil": "Chimboy t, Oltin bosaga k, 63-uy Or:Xon machit"
+    },
+    {
+      "filial": "KEGEYLI",
+      "manzil": "Kegeyli t, Dostlik guzari k, 106-uy Or:Kegeyli bazar"
+    },
+    {
+      "filial": "QANLIKO'L",
+      "manzil": "Qanliko'l t, Dosliq k, 63-uy. Or:Xalq banki ro'parasida"
+    }
+  ]
+}

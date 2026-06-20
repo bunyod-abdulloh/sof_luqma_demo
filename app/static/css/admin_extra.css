@@ -1,0 +1,75 @@
+@media (max-width: 1024px) {
+  /* ─── Karta ─── */
+  #result_list tbody tr {
+      display: block !important;
+      margin-bottom: 14px !important;
+      padding: 8px 6px 6px !important;
+      border-radius: 18px !important;
+
+      /* Karta foni — atrofdan yorqinroq (qorong'u rejim) */
+      background: rgba(255, 255, 255, .04) !important;
+      border: 1px solid rgba(255, 255, 255, .08) !important;
+
+      /* Chuqur, ko'rinarli soya */
+      box-shadow:
+        0 1px 0 rgba(255, 255, 255, .04) inset,
+        0 2px 4px rgba(0, 0, 0, .25),
+        0 12px 28px -10px rgba(0, 0, 0, .55) !important;
+
+      overflow: hidden;
+      transition: transform .14s ease, background .14s ease;
+    }
+
+    #result_list tbody tr:active {
+      transform: scale(.985);
+      background: rgba(255, 255, 255, .06) !important;
+    }
+
+    /* Yorug' rejim uchun */
+    @media (prefers-color-scheme: light) {
+      #result_list tbody tr {
+        background: #ffffff !important;
+        border: 1px solid rgba(0, 0, 0, .06) !important;
+        box-shadow:
+          0 1px 2px rgba(0, 0, 0, .04),
+          0 8px 24px -8px rgba(0, 0, 0, .12) !important;
+      }
+    }
+
+  /* ─── Qatorlar: chiziqsiz, bo'sh joy bilan ─── */
+  #result_list tbody tr > td {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 9px 16px !important;
+    border: none !important;
+    font-size: 14px;
+  }
+
+  /* ─── "Select Record" qatorini yashirish — toza ko'rinish ─── */
+  #result_list tbody tr > td.action-checkbox {
+    display: none !important;
+  }
+
+  /* ─── Buyurtma raqami — yirik sarlavha ─── */
+  #result_list tbody tr > td:nth-child(2) {
+    padding: 12px 16px 8px !important;
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    letter-spacing: -.02em;
+  }
+
+  /* ─── Maydon nomlarini yumshatish ─── */
+  #result_list tbody tr > td::before {
+    opacity: .65;
+    font-weight: 600 !important;
+    letter-spacing: .03em;
+  }
+
+  /* ─── "More Actions" — nozik futer ─── */
+  #result_list tbody tr > td:last-child {
+    margin-top: 2px;
+    padding-top: 12px !important;
+  }
+}

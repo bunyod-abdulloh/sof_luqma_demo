@@ -1,0 +1,353 @@
+<div id="cart-page" class="page pb-32">
+
+    {# CSRF #}
+    <form style="display:none;">{% csrf_token %}</form>
+
+    {# ===== STEPPER HEADER ===== #}
+    <div class="cart-stepper-header">
+        <div class="cart-step-row">
+
+            <div class="cart-step-item">
+                <div class="cart-step-dot active" id="step-dot-1">1</div>
+                <span class="cart-step-label">Savat</span>
+            </div>
+            <div class="cart-step-line" id="step-line-1"></div>
+
+            <div class="cart-step-item">
+                <div class="cart-step-dot" id="step-dot-2">2</div>
+                <span class="cart-step-label">Yetkazish</span>
+            </div>
+            <div class="cart-step-line" id="step-line-2"></div>
+
+            <div class="cart-step-item">
+                <div class="cart-step-dot" id="step-dot-3">3</div>
+                <span class="cart-step-label">To'lov</span>
+            </div>
+            <div class="cart-step-line" id="step-line-3"></div>
+
+            <div class="cart-step-item">
+                <div class="cart-step-dot" id="step-dot-4">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <span class="cart-step-label">Tasdiq</span>
+            </div>
+
+        </div>
+    </div>
+
+    {# ===== STEP 1 — SAVAT ===== #}
+    <div id="cart-step-1" class="px-4 pt-4 space-y-3">
+        <h2 class="text-xl font-extrabold text-gray-900">Savat</h2>
+
+        <div id="cart-items" class="space-y-3"></div>
+
+        <div id="cart-empty" class="hidden text-center py-20 text-gray-400 font-medium">
+            <div class="text-5xl mb-3">🛒</div>
+            <p>Savat hozircha bo'sh</p>
+        </div>
+
+        {# Narxlar xulosasi #}
+        <div id="cart-summary-box" class="hidden bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-2">
+            <div class="flex justify-between text-sm text-gray-500">
+                <span>Mahsulotlar</span>
+                <span id="subtotal-val" class="font-semibold text-gray-700">0 so'm</span>
+            </div>
+            <div class="border-t border-gray-100 pt-2 flex justify-between">
+                <span class="font-bold text-gray-900">Jami</span>
+                <span id="total-val" class="font-black text-lg text-[var(--brand-green-dark)]">0 so'm</span>
+            </div>
+        </div>
+    </div>
+
+    {# ===== STEP 2 — YETKAZIB BERISH ===== #}
+    <div id="cart-step-2" class="hidden px-4 pt-4 space-y-3">
+        <h2 class="text-xl font-extrabold text-gray-900">Yetkazib berish</h2>
+
+        <!-- Saqlangan manzillar -->
+        <div id="saved-addresses" class="hidden"
+             style="display:flex; flex-direction:column; gap:8px; margin-bottom:16px;">
+        </div>
+
+        {# Mijoz ma'lumotlari #}
+        <div class="bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-3">
+            <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Mijoz</p>
+            <div>
+                <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-fullname">Ism Familiya</label>
+                <input type="text" id="d-fullname" placeholder="Abdullayev Abdulla"
+                       class="cart-input" autocomplete="name">
+            </div>
+            <div>
+                <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-phone">Telefon raqam</label>
+                <input type="tel" id="d-phone" placeholder="+998 90 123 45 67"
+                       class="cart-input" inputmode="tel" autocomplete="tel">
+            </div>
+        </div>
+
+        {# Hudud #}
+        <div class="bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-3">
+            <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Hudud</p>
+            <div>
+                <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-region">Viloyat</label>
+                <select id="d-region" class="cart-input">
+                    <option value="">— Viloyatni tanlang —</option>
+                </select>
+            </div>
+            <div id="d-district-wrap" class="hidden">
+                <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-district">Tuman / Shahar</label>
+                <select id="d-district" class="cart-input">
+                    <option value="">— Tumanni tanlang —</option>
+                </select>
+            </div>
+        </div>
+
+        {# Toshkent shahri bloki #}
+        <div id="d-tashkent-block" class="hidden bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-3">
+            <div class="bg-green-50 rounded-xl px-4 py-3 flex items-center justify-between">
+                <span class="text-sm text-gray-600">Shahar ichida yetkazib berish</span>
+                <span id="d-tashkent-price"
+                      class="font-black text-[var(--brand-green-dark)] text-base">40 000 so'm</span>
+            </div>
+            <div>
+                <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-address">Ko'cha / Manzil</label>
+                <textarea id="d-address" rows="2" placeholder="Ko'cha nomi, bino raqami"
+                          class="cart-input resize-none"></textarea>
+            </div>
+            {# GPS #}
+            <div class="flex gap-2">
+                <button type="button" class="location-btn flex-1" data-request-location>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                    <span id="d-location-btn-text">GPS</span>
+                </button>
+                <button type="button" class="location-btn flex-1" data-open-map-sheet>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                    </svg>
+                    <span>Xaritadan</span>
+                </button>
+            </div>
+            <div id="d-location-status" class="hidden flex items-center gap-2 px-3 py-2 bg-green-50 rounded-xl">
+                <span class="text-base">📍</span>
+                <span class="text-xs font-semibold text-[var(--brand-green-dark)]">Lokatsiya tanlandi</span>
+                <button class="ml-auto text-xs text-gray-500" type="button" data-clear-location>Bekor qilish</button>
+            </div>
+            {# Ko'p qavatli uy #}
+            <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer select-none">
+                <input type="checkbox" id="d-is-apartment" class="rounded"
+                       onchange="CartStepper.toggleApartment(this.checked)">
+                Ko'p qavatli uy
+            </label>
+            <div id="d-apartment-block" class="hidden grid grid-cols-3 gap-2">
+                <div>
+                    <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-building">Uy raqami</label>
+                    <input type="text" id="d-building" placeholder="12" class="cart-input" inputmode="numeric">
+                </div>
+                <div>
+                    <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-apartment">Xonadon</label>
+                    <input type="text" id="d-apartment" placeholder="45" class="cart-input" inputmode="numeric">
+                </div>
+                <div>
+                    <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-intercom">Domofon</label>
+                    <input type="text" id="d-intercom" placeholder="45#" class="cart-input">
+                </div>
+            </div>
+        </div>
+
+        {# Boshqa viloyat: xizmat tanlash #}
+        <div id="d-service-block" class="hidden bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-3">
+            <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Yetkazib berish turi</p>
+            <div id="d-service-options" class="grid grid-cols-2 gap-2"></div>
+
+            {# Taxi #}
+            <div id="d-taxi-block" class="hidden">
+                <div class="flex items-center gap-3 bg-amber-50 rounded-2xl px-4 py-3">
+                    <img id="d-taxi-icon" src="" alt="Taksi"
+                         class="w-9 h-9 object-contain rounded-lg flex-shrink-0 hidden">
+                    <span id="d-taxi-icon-fallback" class="text-2xl flex-shrink-0">🚕</span>
+                    <div>
+                        <p class="text-sm font-semibold text-amber-900 mb-0.5">Taksi orqali yetkazib berish</p>
+                        <p class="text-xs text-amber-700 leading-relaxed">Buyurtma tasdiqlangandan so'ng siz bilan
+                            bog'lanamiz</p>
+                    </div>
+                </div>
+            </div>
+
+            {# UzPost #}
+            <div id="d-uzpost-block" class="hidden">
+                <div class="border border-gray-100 rounded-2xl px-4 py-3 space-y-3">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-9 h-9 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-gray-800 leading-none mb-0.5">UzPost bo'limi</p>
+                            <p class="text-xs text-gray-400">Eng yaqin bo'lim manzilini kiriting</p>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-uzpost-address">
+                            Bo'lim manzili <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" id="d-uzpost-address" class="cart-input"
+                               placeholder="Masalan: Mirzo Ulug'bek ko'chasi, 15-uy, 3-bo'lim">
+                    </div>
+                </div>
+            </div>
+
+            {# Filial #}
+            <div id="d-branch-block" class="hidden space-y-3">
+                <div>
+                    <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-branch">Filial</label>
+                    <select id="d-branch" class="cart-input">
+                        <option value="">— Filialni tanlang —</option>
+                    </select>
+                </div>
+                <div id="d-branch-address-block" class="hidden bg-gray-50 rounded-xl px-4 py-3">
+                    <p class="text-xs text-gray-500 font-medium mb-1">Filial manzili</p>
+                    <p id="d-branch-address-text" class="text-sm text-gray-700"></p>
+                </div>
+                <div id="d-no-branch-msg" class="hidden px-4 py-3 bg-amber-50 rounded-xl">
+                    <p class="text-xs font-semibold text-amber-700">
+                        ⚠️ Tanlangan manzilda ushbu pochta xizmati mavjud emas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {# Manzil nomi #}
+        <div id="d-label-block" class="bg-white rounded-2xl border border-green-50 shadow-soft p-4">
+            <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-label">
+                Manzil nomi (ixtiyoriy)
+            </label>
+            <input type="text" id="d-label" placeholder="Uy, Ish, Onam uyiga..."
+                   class="cart-input" maxlength="50">
+            <p class="text-[10px] text-gray-400 mt-1">Keyingi buyurtmada tez tanlash uchun</p>
+        </div>
+
+        {# Izoh #}
+        <div class="bg-white rounded-2xl border border-green-50 shadow-soft p-4">
+            <label class="text-xs text-gray-500 font-medium mb-1 block" for="d-note">Izoh (ixtiyoriy)</label>
+            <input type="text" id="d-note" placeholder="Qo'shimcha ma'lumot..." class="cart-input">
+        </div>
+    </div>
+
+    {# ===== STEP 3 — TO'LOV ===== #}
+    <div id="cart-step-3" class="hidden px-4 pt-4 space-y-3">
+        <h2 class="text-xl font-extrabold text-gray-900">To'lov va tasdiqlash</h2>
+
+        {# To'lov turi #}
+        <div class="bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-3">
+            <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">To'lov turi</p>
+            <div class="grid grid-cols-2 gap-2">
+                <button type="button" class="payment-btn" data-payment="cash"
+                        onclick="CartStepper.selectPayment(this, 'cash')">
+                    <span class="text-2xl">💵</span>
+                    <span class="text-sm font-semibold text-gray-700">Naqd</span>
+                </button>
+                <button type="button" class="payment-btn" data-payment="card"
+                        onclick="CartStepper.selectPayment(this, 'card')">
+                    <span class="text-2xl">💳</span>
+                    <span class="text-sm font-semibold text-gray-700">Karta</span>
+                </button>
+            </div>
+        </div>
+
+        {# Buyurtma xulosasi #}
+        <div class="bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-2">
+            <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3">Buyurtma</p>
+            <div id="order-summary-items" class="space-y-2"></div>
+            <div class="border-t border-gray-100 pt-3 space-y-1">
+                <div class="flex justify-between text-sm text-gray-500">
+                    <span>Mahsulotlar</span>
+                    <span id="summary-subtotal" class="font-semibold text-gray-700"></span>
+                </div>
+                <div class="flex justify-between text-sm text-gray-500">
+                    <span>Yetkazib berish</span>
+                    <span id="summary-delivery" class="font-semibold text-[var(--brand-green)]"></span>
+                </div>
+                <div class="flex justify-between pt-1">
+                    <span class="font-bold text-gray-900">Jami</span>
+                    <span id="summary-total" class="font-black text-lg text-[var(--brand-green-dark)]"></span>
+                </div>
+            </div>
+        </div>
+
+        {# Yetkazish ma'lumotlari recap #}
+        <div class="bg-white rounded-2xl border border-green-50 shadow-soft p-4 space-y-2">
+            <div class="flex items-center justify-between mb-1">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Yetkazish</p>
+                <button type="button" class="text-xs text-[var(--brand-green)] font-semibold"
+                        onclick="CartStepper.goTo(2)">O'zgartirish
+                </button>
+            </div>
+            <p id="recap-name" class="text-sm font-semibold text-gray-800"></p>
+            <p id="recap-phone" class="text-xs text-gray-500"></p>
+            <p id="recap-delivery" class="text-xs text-gray-600 mt-1"></p>
+        </div>
+    </div>
+
+    {# ===== BOTTOM BAR ===== #}
+    <div class="fixed bottom-0 left-0 right-0 z-40">
+
+        {# Cart action bar — faqat cart sahifada ko'rinadi #}
+        <div id="cart-bottom-bar" class="bg-white border-t border-gray-100 px-4 py-3" style="display:none;">
+            <div class="flex items-center gap-2">
+                <button type="button" id="cart-back-btn"
+                        class="hidden flex-shrink-0 flex items-center gap-1.5 text-sm text-gray-500
+                           font-semibold px-4 py-3.5 rounded-2xl bg-gray-100 hover:bg-gray-200
+                           transition-colors whitespace-nowrap">
+                    ← Orqaga
+                </button>
+                <button type="button" id="cart-next-btn"
+                        class="btn-primary flex-1 flex items-center justify-center gap-1.5"
+                        onclick="CartStepper.next()">
+                    Davom etish →
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Map sheet — o'zgarishsiz #}
+<div id="map-sheet" class="detail-modal" role="dialog" aria-modal="true">
+    <div class="detail-backdrop" data-close-map-sheet></div>
+    <div class="detail-sheet" id="map-sheet-content">
+        <div class="detail-handle"></div>
+        <button class="detail-close-btn" data-close-map-sheet aria-label="Yopish">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="map-sheet-header">
+            <h2 class="text-lg font-extrabold text-gray-900">Manzilni belgilang</h2>
+            <p class="text-xs text-gray-500 mt-1">Markerni surib joylashuvni tanlang</p>
+        </div>
+        <div id="leaflet-map" class="map-container"></div>
+        <div class="map-info">
+            <div id="map-coords" class="map-coords">
+                <span class="text-base">📍</span>
+                <span id="map-coords-text" class="text-xs text-gray-600 font-medium">Markerni qo'ying</span>
+            </div>
+            <button class="map-locate-btn" type="button" aria-label="GPS" data-auto-locate-map>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="map-actions">
+            <button class="btn-primary w-full" data-confirm-map-location>Tasdiqlash</button>
+        </div>
+    </div>
+</div>

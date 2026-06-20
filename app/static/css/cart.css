@@ -1,0 +1,231 @@
+/* =============================================
+   Yetkazib berish xizmati tugmalari
+   ============================================= */
+
+.service-option-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 8px;
+    border-radius: 16px;
+    border: 2px solid #e8f5e9;
+    background: #f9fffe;
+    color: #374151;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, transform 0.1s;
+    width: 100%;
+    min-height: 76px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.service-option-btn:active {
+    transform: scale(0.96);
+}
+
+.service-option-btn.active {
+    border-color: var(--brand-green, #22c55e);
+    background: #f0fdf4;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
+}
+
+.service-btn-icon {
+    font-size: 22px;
+    line-height: 1;
+}
+
+.service-btn-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.service-option-btn.active .service-btn-label {
+    color: var(--brand-green-dark, #15803d);
+}
+.service-btn-icon-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* GPS tugma holatlari */
+.location-btn.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.location-btn.success {
+    background: #f0fdf4;
+    border-color: var(--brand-green, #22c55e);
+    color: var(--brand-green-dark, #15803d);
+}
+
+/* Stepper */
+.cart-stepper-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  padding: 12px 16px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.cart-step-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+.cart-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.cart-step-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  color: #999;
+  transition: background 0.2s, color 0.2s;
+}
+.cart-step-dot.active {
+  background: #111;
+  color: #fff;
+}
+.cart-step-dot.done {
+  background: var(--brand-green);
+  color: #fff;
+}
+.cart-step-label {
+  font-size: 10px;
+  color: #aaa;
+  white-space: nowrap;
+}
+.cart-step-line {
+  flex: 1;
+  height: 2px;
+  background: #f0f0f0;
+  margin-top: 13px;
+  transition: background 0.2s;
+}
+.cart-step-line.done {
+  background: var(--brand-green);
+}
+
+/* To'lov tugmalari */
+.payment-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 8px;
+  border-radius: 14px;
+  border: 1.5px solid #e5e7eb;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.payment-btn.active {
+  border-color: var(--brand-green);
+  background: #f0fdf4;
+}
+
+.bottom-nav-wrapper {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.bottom-nav-wrapper.hidden-nav {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#cart-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 44px;
+}
+
+/* Bosh sahifa holati */
+#cart-back-btn.is-home::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%236b7280' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+#cart-bottom-bar {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 96px;
+    z-index: 30;
+    background: #fff;
+    border-radius: 16px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: bottom 0.2s ease;
+}
+
+.saved-address-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: left;
+}
+
+.saved-address-btn.active {
+  border-color: var(--brand-green);
+  background: #f0fdf4;
+}
+
+.saved-addr-delete {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #9ca3af;
+  transition: all 0.15s;
+}
+
+.saved-addr-delete:active {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.saved-addr-label {
+  font-weight: 700;
+  font-size: 13px;
+  color: #1f2937;
+}
+
+.saved-addr-detail {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
+}

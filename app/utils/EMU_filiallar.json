@@ -1,0 +1,910 @@
+{
+  "Andijon viloyati": [
+    {
+      "filial": "Kuyganyor (Andijon tumani)",
+      "manzil": "ko‘cha  А.Қадири, 74"
+    },
+    {
+      "filial": "Andijon Chem sklad",
+      "manzil": "ko‘cha  Соглом авлод 6 проъезд дом, 172"
+    },
+    {
+      "filial": "Andijon Eski shahar",
+      "manzil": "ko‘cha Узбекистанская, 55 Эски Шахар"
+    },
+    {
+      "filial": "Andijon Yangi shahar",
+      "manzil": "ko‘cha  Амира Тимура, 11 Янги шахар"
+    },
+    {
+      "filial": "Asaka",
+      "manzil": "ko‘cha Умида, 90"
+    },
+    {
+      "filial": "Baliqchi",
+      "manzil": "Балыкчи проспект, 8"
+    },
+    {
+      "filial": "Boʻston",
+      "manzil": "ko‘cha Амира Темура, 88А"
+    },
+    {
+      "filial": "Buloqboshi",
+      "manzil": "shaharcha Булакбаши"
+    },
+    {
+      "filial": "Chinobod",
+      "manzil": "ko‘cha Хидирова, 2"
+    },
+    {
+      "filial": "Izboskan",
+      "manzil": "ko‘cha  Накшбанд, 12"
+    },
+    {
+      "filial": "Jalaquduq",
+      "manzil": "ko‘cha Узбекистан, 57"
+    },
+    {
+      "filial": "Marhamat",
+      "manzil": "ko‘cha  Ипак Йули, 2"
+    },
+    {
+      "filial": "Oltinko'l",
+      "manzil": "ko‘cha Чинабад, 37"
+    },
+    {
+      "filial": "Oqoltin",
+      "manzil": "shoh ko‘cha Навои, 2, Акалтын"
+    },
+    {
+      "filial": "Paxtaobod",
+      "manzil": "ko‘cha Чувама, 78"
+    },
+    {
+      "filial": "Qo‘rg‘ontepa",
+      "manzil": "ko‘cha  Мустакиллик, 72"
+    },
+    {
+      "filial": "Qorasuv shaharchasi",
+      "manzil": "ko‘cha  Бабуршаха, 1"
+    },
+    {
+      "filial": "Shahrixon",
+      "manzil": "ko‘cha Чинабад, 37"
+    },
+    {
+      "filial": "Xo'jaobod",
+      "manzil": "ko‘cha  A.Наваи, 8"
+    },
+    {
+      "filial": "Xonobod",
+      "manzil": "ko‘cha Абад, 146"
+    }
+  ],
+  "Buxoro viloyati": [
+    {
+      "filial": "Buxoro Karvonbozor",
+      "manzil": "Gazli shossesi, 121"
+    },
+    {
+      "filial": "Buxoro Mikrorayon",
+      "manzil": "ko‘cha  Мирзы Абдулазима Соми, 48"
+    },
+    {
+      "filial": "Buxoro ofis",
+      "manzil": "ko‘cha  Джалола Икроми"
+    },
+    {
+      "filial": "Galaosiyo (Buxoro tumani)",
+      "manzil": "ko‘cha  Айбека, 179"
+    },
+    {
+      "filial": "Gijduvon",
+      "manzil": "ko‘cha  Юсуф Хамадани 26"
+    },
+    {
+      "filial": "Jondor",
+      "manzil": "ko‘cha  М.Тароби3"
+    },
+    {
+      "filial": "Kogon",
+      "manzil": "ko‘cha  Проспект Бухара, 46"
+    },
+    {
+      "filial": "Olat",
+      "manzil": "ko‘cha  Маърифат, 25"
+    },
+    {
+      "filial": "Pehku",
+      "manzil": "ko‘cha Тинчлик, 2"
+    },
+    {
+      "filial": "Qorako'l",
+      "manzil": "ko‘cha  Улугбека 178"
+    },
+    {
+      "filial": "Qorovulbozor",
+      "manzil": "ko‘cha  Ибн Сина, 85"
+    },
+    {
+      "filial": "Romitan",
+      "manzil": "ko‘cha  Амира Темура, 12"
+    },
+    {
+      "filial": "Shofirkon",
+      "manzil": "ko‘cha  Мустакиллик, 3"
+    },
+    {
+      "filial": "Vobkent",
+      "manzil": "ko‘cha  Имома Ал-Бухорий, 16A"
+    }
+  ],
+  "Jizzax viloyati": [
+    {
+      "filial": "Arnasoy",
+      "manzil": "ko‘cha  Фурката, 2"
+    },
+    {
+      "filial": "Baxmal",
+      "manzil": "ko‘cha  Мустакиллик, 38"
+    },
+    {
+      "filial": "Doʻstlik",
+      "manzil": "ko‘cha Дустлик"
+    },
+    {
+      "filial": "Forish",
+      "manzil": "ko‘cha Амира Темура, 56"
+    },
+    {
+      "filial": "Gagarin",
+      "manzil": "ko‘cha  Узбекистан, 1"
+    },
+    {
+      "filial": "G'allaorol",
+      "manzil": "ko‘cha  Мустакиллик, 2"
+    },
+    {
+      "filial": "Jizzax ofis",
+      "manzil": "Массив Заргарлик, 14А"
+    },
+    {
+      "filial": "Jizzax Xayrabod",
+      "manzil": "ko‘cha  Д Ёвқачарова, 5"
+    },
+    {
+      "filial": "Paxtakor",
+      "manzil": "Yunus Rajabiy ko'chasi, 4/1"
+    },
+    {
+      "filial": "Sharof Rashidov",
+      "manzil": "ko‘cha  Шифокор, 109"
+    },
+    {
+      "filial": "Zafarobod",
+      "manzil": "Usmon Nosir ko'chasi, 1"
+    },
+    {
+      "filial": "Zarbdor",
+      "manzil": "Mustaqillik shoh koʻchasi"
+    },
+    {
+      "filial": "Zomin",
+      "manzil": "ko‘cha  Мустакиллик, 50"
+    }
+  ],
+  "Qoraqalpog‘iston Respublikasi": [
+    {
+      "filial": "Aqmag'it",
+      "manzil": "shoh ko‘cha Акмангит, 42/2"
+    },
+    {
+      "filial": "Beruniy",
+      "manzil": "ko‘cha Халклар Дустлиги 4"
+    },
+    {
+      "filial": "Chimboy",
+      "manzil": "ko‘cha  Амира Темура, 136"
+    },
+    {
+      "filial": "Ellikqal'a (Bo'ston shaxri)",
+      "manzil": "Халклар дўстлиги 32"
+    },
+    {
+      "filial": "Kegeyli",
+      "manzil": "shoh ko‘cha Дослык, 23"
+    },
+    {
+      "filial": "Mangʻit (Amudaryo tum)",
+      "manzil": "ko‘cha  Тадбиркорлар, 11"
+    },
+    {
+      "filial": "Nukus (Sklad)",
+      "manzil": "ko‘cha  Беруний 78/Б уй"
+    },
+    {
+      "filial": "Nukus",
+      "manzil": "ko‘cha  С.Камалов 29/20"
+    },
+    {
+      "filial": "Qanlikoʻl",
+      "manzil": "ko‘cha  Гарезсизлык, 22"
+    },
+    {
+      "filial": "Qoʻngʻirot",
+      "manzil": "ko‘cha  Тулеген Айбергенова, 11"
+    },
+    {
+      "filial": "Qoraoʻzak",
+      "manzil": "ko‘cha  Ажинияз, 11"
+    },
+    {
+      "filial": "Shomanay",
+      "manzil": "ko‘cha  Узбекистан, 1"
+    },
+    {
+      "filial": "Taxiatosh",
+      "manzil": "ko‘cha  Ибрайима Юсупова, 67"
+    },
+    {
+      "filial": "Taxtako'pir",
+      "manzil": "shoh ko‘cha Дослык, 47, EMU"
+    },
+    {
+      "filial": "Toʻrtkoʻl",
+      "manzil": "ko‘cha  Турткуль, 60"
+    },
+    {
+      "filial": "Xoʻjayli",
+      "manzil": "ko‘cha  Гарезсизлик 25А"
+    }
+  ],
+  "Qashqadaryo viloyati": [
+    {
+      "filial": "Nishon",
+      "manzil": "ko‘cha  Узбекистан, 49"
+    },
+    {
+      "filial": "Beshkent (Qarshi tumani)",
+      "manzil": "ko‘cha  Амира Тимура, 26"
+    },
+    {
+      "filial": "Chiroqchi",
+      "manzil": "ko‘cha  Мустакиллик, 63"
+    },
+    {
+      "filial": "Dehqonobod",
+      "manzil": "ko‘cha  Мирзо Улугбека 7"
+    },
+    {
+      "filial": "Guzor",
+      "manzil": "ko‘cha Узбекистанская 3/14"
+    },
+    {
+      "filial": "Kasbi",
+      "manzil": "Mustaqillik koʻchasi, 22А, Муглан"
+    },
+    {
+      "filial": "Kitob",
+      "manzil": "ko‘cha  Буюк Ипак йули, 44"
+    },
+    {
+      "filial": "Ko'kdala",
+      "manzil": "ko‘cha  Умара Хайяма 2"
+    },
+    {
+      "filial": "Koson",
+      "manzil": "ko‘cha  Касиблар 42"
+    },
+    {
+      "filial": "Mirishkor",
+      "manzil": "ko‘cha Х.Х.Ниёзий, 2, Янги-Миришкор"
+    },
+    {
+      "filial": "Muborak",
+      "manzil": "ko‘cha Мукими, 90"
+    },
+    {
+      "filial": "Qamashi",
+      "manzil": "ko‘cha  Амира Тимура 662"
+    },
+    {
+      "filial": "Qarshi Komilon",
+      "manzil": "ko‘cha И.Каримова, 295"
+    },
+    {
+      "filial": "Qarshi Osiyo bozor",
+      "manzil": "ko‘cha  Жайхуна 7/72А"
+    },
+    {
+      "filial": "Shahrisabz",
+      "manzil": "ko‘cha Ипак йули 107"
+    },
+    {
+      "filial": "Shahrisabz",
+      "manzil": "ko‘cha Чиланзар 89"
+    },
+    {
+      "filial": "Yakkabogʻ",
+      "manzil": "ko‘cha  Амира Тимура 158"
+    }
+  ],
+  "Navoiy viloyati": [
+    {
+      "filial": "Beshrabot (Navbahor)",
+      "manzil": "ko‘cha  Истиклол, 113"
+    },
+    {
+      "filial": "Karmana",
+      "manzil": "ko‘cha Любатон 230"
+    },
+    {
+      "filial": "Konimex",
+      "manzil": "ko‘cha  Али Абу Ибн Сины, 7"
+    },
+    {
+      "filial": "Navoiy Vosxod",
+      "manzil": "ko‘cha Жанубии 29/3"
+    },
+    {
+      "filial": "Nurota",
+      "manzil": "ko‘cha  М. Рахимова, 3"
+    },
+    {
+      "filial": "Qiziltepa",
+      "manzil": "ko‘cha  Мустакиллик, 13"
+    },
+    {
+      "filial": "Uchquduq",
+      "manzil": "ko‘cha  Амира Тимура 1А"
+    },
+    {
+      "filial": "Xatirchi",
+      "manzil": "ko‘cha  Курбанова 22"
+    },
+    {
+      "filial": "Zarafshon",
+      "manzil": "ko‘cha  Амира Тимура 20"
+    }
+  ],
+  "Namangan viloyati": [
+    {
+      "filial": "Toshbuloq (Namangan tumani)",
+      "manzil": "ko‘cha  Мустакиллик, 2"
+    },
+    {
+      "filial": "Chartoq",
+      "manzil": "ko‘cha Наманган, 5"
+    },
+    {
+      "filial": "Chust",
+      "manzil": "Ипак йўли кўчаси 7 уй"
+    },
+    {
+      "filial": "Jumashuy  ( Mingbuloq)",
+      "manzil": "Ozodlik ko‘chasi 26- uy"
+    },
+    {
+      "filial": "Kosonsoy",
+      "manzil": "Me'mor ko'chasi 1A uy"
+    },
+    {
+      "filial": "Namangan Lola",
+      "manzil": "shoh ko‘cha Бабура, 22"
+    },
+    {
+      "filial": "Namangan Mikrorayon",
+      "manzil": "Кукимбой шох, 6 мкр.-17"
+    },
+    {
+      "filial": "Namangan Sardoba",
+      "manzil": "Алишер Навои кучаси 36 уй"
+    },
+    {
+      "filial": "Pop",
+      "manzil": "Хазиратибоб кўчаси 3 уй"
+    },
+    {
+      "filial": "Turaqo'rg'on",
+      "manzil": "ko‘cha  Касансайская, 6"
+    },
+    {
+      "filial": "Uchqo'rg'on",
+      "manzil": "ko‘cha  Мустакиллик 16"
+    },
+    {
+      "filial": "Uychi",
+      "manzil": "ko‘cha А. Темур, 111, EMU"
+    },
+    {
+      "filial": "Xaqqulobod",
+      "manzil": "ko‘cha  Узбекистанская, 56"
+    },
+    {
+      "filial": "Yangiqoʻrgʻon",
+      "manzil": "shaharcha Янгикурган"
+    }
+  ],
+  "Samarqand viloyati": [
+    {
+      "filial": "Bulung'ur",
+      "manzil": "ko‘cha Узбекистанская 79"
+    },
+    {
+      "filial": "Chelak (Payariq)",
+      "manzil": "ko‘cha Истиклол, 76"
+    },
+    {
+      "filial": "Gulobod (Самарқанд район)",
+      "manzil": "1-я ko‘cha Махорат, 408"
+    },
+    {
+      "filial": "Jomboy",
+      "manzil": "ko‘cha Галакапа, 981"
+    },
+    {
+      "filial": "Juma (Pastdo'rg'om)",
+      "manzil": "Ибн Сино кўчаси 26А"
+    },
+    {
+      "filial": "Kattaqorg'on ofis",
+      "manzil": "Алишер Навои кучаси 182 уй"
+    },
+    {
+      "filial": "Loyish",
+      "manzil": "ko‘cha Б. Ташанова, 1"
+    },
+    {
+      "filial": "Nurobod",
+      "manzil": "Gulzor ko'chasi, 3 uy"
+    },
+    {
+      "filial": "Oqtosh (Narpay)",
+      "manzil": "Амир Темур кўчаси 3-уй"
+    },
+    {
+      "filial": "Payshanba",
+      "manzil": "ko‘cha Алишера Навои, 14"
+    },
+    {
+      "filial": "Samarqand Motrid",
+      "manzil": "Қорасув даҳаси  118-уй."
+    },
+    {
+      "filial": "Samarqand Panjakent",
+      "manzil": "Панжакент кучаси 182"
+    },
+    {
+      "filial": "Samarqand Ulugʻbek",
+      "manzil": "Самаркандская кол дорога 1"
+    },
+    {
+      "filial": "Samarqand Vokzal",
+      "manzil": "Абу Рейхан Беруни 81"
+    },
+    {
+      "filial": "Samarqand Yoshlar Markazi",
+      "manzil": "ko‘cha Узбекистанская, 45"
+    },
+    {
+      "filial": "Tayloq",
+      "manzil": "A.Temur, 15 uy"
+    },
+    {
+      "filial": "Urgut",
+      "manzil": "Амира Тимура дом 13"
+    },
+    {
+      "filial": "Ziyovuddin",
+      "manzil": "ko‘cha Истиклол, 13A"
+    },
+    {
+      "filial": "Kattaqorg'on sklad",
+      "manzil": "Бухоро шох кўчаси 15-уй"
+    }
+  ],
+  "Surxondaryo viloyati": [
+    {
+      "filial": "Angor",
+      "manzil": "Ангор тумани Ат-Термизий кучаси, 41-уй"
+    },
+    {
+      "filial": "Bandixon",
+      "manzil": "shaharcha Бандихон"
+    },
+    {
+      "filial": "Boysun",
+      "manzil": "Фидокорлар кучаси. 2-уй"
+    },
+    {
+      "filial": "Denov ofis",
+      "manzil": "Шароф Рашидов кучаси 242 уй"
+    },
+    {
+      "filial": "Denov sklad",
+      "manzil": "N. Rahimov 1-koʻchasi, 29"
+    },
+    {
+      "filial": "Jarqo'rg'on",
+      "manzil": "ko‘cha Узбекистанская  5"
+    },
+    {
+      "filial": "Muzrabot",
+      "manzil": "Ona Diyor ko'chasi"
+    },
+    {
+      "filial": "Oltinsoy  (Karluk)",
+      "manzil": "A.Qodiriy ko'chasi, 4 uy"
+    },
+    {
+      "filial": "Qiziriq",
+      "manzil": "Ko'kterak ko'chasi"
+    },
+    {
+      "filial": "Qumqo'rg'on",
+      "manzil": "Марказий кучаси"
+    },
+    {
+      "filial": "Sariosiyo",
+      "manzil": "Barkamol Avlod ku 1-uy"
+    },
+    {
+      "filial": "Sherobod",
+      "manzil": "ko‘cha  Мустакиллик, 23E-uy"
+    },
+    {
+      "filial": "Sho'rchi",
+      "manzil": "A.Temur ko'chasi, 33 uy"
+    },
+    {
+      "filial": "Termiz Kurant",
+      "manzil": "А.Навои кучаси, 23"
+    },
+    {
+      "filial": "Termiz sklad Боғишамол",
+      "manzil": "Янги Давр-1"
+    },
+    {
+      "filial": "Uzun",
+      "manzil": "ko‘cha Узбекистан, 15"
+    }
+  ],
+  "Sirdaryo viloyati": [
+    {
+      "filial": "Baxt",
+      "manzil": "Ulug‘yo‘l ko‘chasi, 77uy"
+    },
+    {
+      "filial": "Boyovut (Katlavon)",
+      "manzil": "Soxil maxallasi, Nurafson ko‘chasi, 27uy"
+    },
+    {
+      "filial": "Guliston",
+      "manzil": "ko‘cha Сайхун 2/29"
+    },
+    {
+      "filial": "Guliston Oxunboboyev",
+      "manzil": "ko‘cha Тошкент Йули, 1"
+    },
+    {
+      "filial": "Sayxunobod",
+      "manzil": "Shodlik ko'chasi, 3"
+    },
+    {
+      "filial": "Shirin",
+      "manzil": "Марказий кўча 1-блок"
+    },
+    {
+      "filial": "Sirdaryo (Shaxar)",
+      "manzil": "ko‘cha Узбекистанская 32"
+    },
+    {
+      "filial": "Sirdaryo Dehqonobod",
+      "manzil": "Sirdaryo ko'chasi, 44"
+    },
+    {
+      "filial": "Sirdaryo Sardoba",
+      "manzil": "ko‘cha Дўстлик, 34, Пахтаабад"
+    },
+    {
+      "filial": "Yangiyer",
+      "manzil": "Амир Темур кўчаси 98-уй 1-хонодон"
+    }
+  ],
+  "Toshkent viloyati": [
+    {
+      "filial": "Angren",
+      "manzil": "Навоий кўчаси 23- дом 11-уй"
+    },
+    {
+      "filial": "Bekabad",
+      "manzil": "Буюк Ипак йули 5"
+    },
+    {
+      "filial": "Bo'ka",
+      "manzil": "A.Navoyi ko'chasi, 11 uy"
+    },
+    {
+      "filial": "Chinoz",
+      "manzil": "Samarqand ko'chasi, 26 -uy"
+    },
+    {
+      "filial": "Chirchiq",
+      "manzil": "ko‘cha  А.Навои, дом 295/3"
+    },
+    {
+      "filial": "Do'stobod (Quyi Chirchiq)",
+      "manzil": "Бибихоним 42"
+    },
+    {
+      "filial": "Eshonguzar (Zangiota)",
+      "manzil": "ko‘cha  Мустакиллик, 44"
+    },
+    {
+      "filial": "Gʻazalkent (Bo'stonliq)",
+      "manzil": "Бустонлик кўчаси 74 уй"
+    },
+    {
+      "filial": "Keles (Toshkent tum)",
+      "manzil": "ko‘cha  Юкори Куктерак, 23"
+    },
+    {
+      "filial": "Nurafshon (O'rtachirchiq)",
+      "manzil": "Тошкент йули кучаси. 85"
+    },
+    {
+      "filial": "Ohangaron",
+      "manzil": "ko‘cha  Амира Тимура 25"
+    },
+    {
+      "filial": "Olmaliq",
+      "manzil": "ko‘cha  Эхтиром 8"
+    },
+    {
+      "filial": "Oqqo'rg'on",
+      "manzil": "ko‘cha Охунбобоева, 8"
+    },
+    {
+      "filial": "Parkent",
+      "manzil": "A.Navoyi shoh ko'chasi"
+    },
+    {
+      "filial": "Piskent",
+      "manzil": "Амир Тимур кучаси 82уй"
+    },
+    {
+      "filial": "Qibray",
+      "manzil": "A.Navoyi ko'chasi, 226 -uy"
+    },
+    {
+      "filial": "Yangiyo'l",
+      "manzil": "Самаркадская ko‘cha 199"
+    },
+    {
+      "filial": "Yuqori Chirchiq ( Janabazar)",
+      "manzil": "ko‘cha  Хамкорлик, 1"
+    }
+  ],
+  "Toshkent shahri": [
+    {
+      "filial": "Bek baraka (Chilonzor)",
+      "manzil": "Бек-Барака савдо, 10-катор, 603"
+    },
+    {
+      "filial": "Bektemir (Bektemir)",
+      "manzil": "shoh ko‘cha Бектемир 106"
+    },
+    {
+      "filial": "Chorsu (Shayxontohur)",
+      "manzil": "ko‘cha Алишера Навои, 40"
+    },
+    {
+      "filial": "Fulfilment   (Yangihayot)",
+      "manzil": "ko‘cha  Эмира Тимура, 2А"
+    },
+    {
+      "filial": "Ippodrom (Chilonzor)",
+      "manzil": "Иподром 2-қатор 37-дукон"
+    },
+    {
+      "filial": "Malika  (Yunusobod)",
+      "manzil": "Малая кольцевая дорога, 57"
+    },
+    {
+      "filial": "Mirzo Ulug'bek",
+      "manzil": "ko‘cha  Мухаммад Юсуф 1 А"
+    },
+    {
+      "filial": "O'rikzor (Uchtepa)",
+      "manzil": "Урикзор бозор, 3-блок, 100"
+    },
+    {
+      "filial": "Qatortol (Chilonzor)",
+      "manzil": "Чиланзор, 5-квартал, 29 уй"
+    },
+    {
+      "filial": "Qoraqamish (Olmazor)",
+      "manzil": "2-я ko‘cha Каракамыш, дом-2А"
+    },
+    {
+      "filial": "Qo'yliq massiv 5 (Sergeli)",
+      "manzil": "shoh ko‘cha Ханабадтепа, 20 А"
+    },
+    {
+      "filial": "Sebzor (Olmazor)",
+      "manzil": "массив Себзар, 52"
+    },
+    {
+      "filial": "Sergeli  (Sergeli)",
+      "manzil": "массив Сергели-VIIIА, 17"
+    },
+    {
+      "filial": "Shaxriston (Yunusobod)",
+      "manzil": "ko‘cha Чинабад, 2"
+    },
+    {
+      "filial": "Shota Rustaveli (Yakkasaroy)",
+      "manzil": "ko‘cha Шота Руставели, 37/14"
+    },
+    {
+      "filial": "Tinchlik (Shayxontohur)",
+      "manzil": "Беруний кучаси"
+    },
+    {
+      "filial": "Feruza (Mirzo Ulug'bek)",
+      "manzil": "массив Феруза-1, 32А"
+    },
+    {
+      "filial": "Vatan (Uchtepa)",
+      "manzil": "ko‘cha  Катта Хирмонтепа дом,  29а"
+    },
+    {
+      "filial": "Yashnabod (Yashnabod)",
+      "manzil": "1-й квартал, 116"
+    },
+    {
+      "filial": "Zeleniy bozor (Mirobod)",
+      "manzil": "ko‘cha Сурхон 29"
+    },
+    {
+      "filial": "Ibn Sino (Shayxontohur)",
+      "manzil": "массив Ибн Сина-2, 1А"
+    }
+  ],
+  "Farg‘ona viloyati": [
+    {
+      "filial": "Beshariq",
+      "manzil": "Олтин Водий кўчаси  45-уй"
+    },
+    {
+      "filial": "Bog'dod",
+      "manzil": "ko‘cha  Мустакиллик  10"
+    },
+    {
+      "filial": "Buvayda (Yangiqo'rg'on)",
+      "manzil": "А.Навоий кўчаси 34 уй"
+    },
+    {
+      "filial": "Fargona (Фестивал)",
+      "manzil": "ko‘cha  Комус 18"
+    },
+    {
+      "filial": "Furqat",
+      "manzil": "ko‘cha Навбахор, 695"
+    },
+    {
+      "filial": "Margilan",
+      "manzil": "ko‘cha Мустакиллик 326"
+    },
+    {
+      "filial": "Oltiariq",
+      "manzil": "ko‘cha Узбекистан, 30"
+    },
+    {
+      "filial": "Qirguli",
+      "manzil": "Янги аср 21 B"
+    },
+    {
+      "filial": "Qo'qon Navoi",
+      "manzil": "Массив Алишер Навои 44а"
+    },
+    {
+      "filial": "Qo'shtepa",
+      "manzil": "ko‘cha Шофталибог 11"
+    },
+    {
+      "filial": "Quqon bozor",
+      "manzil": "Хунармандлар бозори 7-блок 11-дўкон"
+    },
+    {
+      "filial": "Quqon Charhiy",
+      "manzil": "ko‘cha Чархий 25"
+    },
+    {
+      "filial": "Quva",
+      "manzil": "Ахмад Яссавий кўчаси, 44"
+    },
+    {
+      "filial": "Quvasoy",
+      "manzil": "ko‘cha Алишера Навои, 24"
+    },
+    {
+      "filial": "Rishton",
+      "manzil": "ko‘cha Риштанская дом 11"
+    },
+    {
+      "filial": "Uchko'prik",
+      "manzil": "Учкуприк шахарчаси Дехқон бозори 9-дўкон"
+    },
+    {
+      "filial": "Vodil",
+      "manzil": "ko‘cha Пешвозов"
+    },
+    {
+      "filial": "Yaypan  (O'zbekiston)",
+      "manzil": "Туркистон кўчаси 235-уй"
+    },
+    {
+      "filial": "Yormozor",
+      "manzil": "Ал-Фаргоний 227"
+    },
+    {
+      "filial": "Yozyovon",
+      "manzil": "ko‘cha Алишера Навои, 4"
+    }
+  ],
+  "Xorazm viloyati": [
+    {
+      "filial": "Bog'ot",
+      "manzil": "ko‘cha Узбекистанская 11"
+    },
+    {
+      "filial": "Gurlan",
+      "manzil": "ko‘cha  Мустакиллик 29"
+    },
+    {
+      "filial": "Hazarasp",
+      "manzil": "А.Навоий куча"
+    },
+    {
+      "filial": "Pitnak",
+      "manzil": "Питнак, 3/7"
+    },
+    {
+      "filial": "Qo'shko'pir",
+      "manzil": "Шароф Рашидов кучаси 49А уй"
+    },
+    {
+      "filial": "Shovot",
+      "manzil": "К.Отаниёзов кўчаси 64-уй"
+    },
+    {
+      "filial": "Urganch",
+      "manzil": "ko‘cha  Аль-Харезми, 67"
+    },
+    {
+      "filial": "Urganch Sholikor",
+      "manzil": "ko‘cha  Тадбиркорлар 52"
+    },
+    {
+      "filial": "Urgench Mash'al",
+      "manzil": "Янгиарик кучаси 120"
+    },
+    {
+      "filial": "Xiva",
+      "manzil": "Феруз кучаси. 78А уй"
+    },
+    {
+      "filial": "Xonqa",
+      "manzil": "Халқлар Дўстлиги кўчаси 4-уй"
+    },
+    {
+      "filial": "Yangibozor",
+      "manzil": "ko‘cha Истирохат, 5, Янгибазар"
+    },
+    {
+      "filial": "Yangiariq",
+      "manzil": "Urganch ko'chasi, 16"
+    }
+  ]
+}
