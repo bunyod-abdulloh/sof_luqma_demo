@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { renderCart, initCart } from './cart.js';
+import { renderCart, initCart } from '../cart/cart.js';
 
 export function showPage(pageId, btn) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));

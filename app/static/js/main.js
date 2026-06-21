@@ -1,16 +1,12 @@
 import { setupTelegram } from './telegram.js';
 import { initBannerCarousel } from './ui/banners.js';
-import { addToCart, changeQty, updateBadge, initCart } from './ui/cart.js';
+import { addToCart, changeQty, updateBadge, initCart } from './cart/cart.js';
 import { openProductDetail, closeProductDetail, changeDetailQty, addDetailToCart } from './ui/modal.js';
 import { showPage } from './ui/navigation.js';
 import { loadInitialProducts, setupInfiniteScroll, filterItems } from './ui/products.js';
 import { initCartLocationHandlers } from './ui/map.js';
 import { checkout } from './ui/checkout.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-    Telegram.WebApp.ready();
-    initCartLocationHandlers();
-});
 
 function bindEvents() {
     document.addEventListener('click', async (e) => {
@@ -27,12 +23,6 @@ function bindEvents() {
             openProductDetail(card.dataset.productId);
             return;
         }
-
-        const minus = e.target.closest('[data-cart-minus]');
-        if (minus) { changeQty(minus.dataset.cartMinus, -1); return; }
-
-        const plus = e.target.closest('[data-cart-plus]');
-        if (plus) { changeQty(plus.dataset.cartPlus, 1); return; }
 
         const cat = e.target.closest('[data-category-slug]');
         if (cat) { await filterItems(cat.dataset.categorySlug, cat); return; }

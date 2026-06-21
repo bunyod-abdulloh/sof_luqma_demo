@@ -4,14 +4,14 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import ensure_csrf_cookie
 
-from .models import Banner, Category, Product
-
+from .models import Banner, Category
+from .models import Product
 
 PAGE_SIZE = 24
 
 
 def serialize_product(p):
-    return {
+    data = {
         "id": p.id,
         "name": p.name,
         "price": float(p.price),
@@ -20,8 +20,20 @@ def serialize_product(p):
         "cat_name": p.category.name,
         "unit": p.unit,
         "is_organic": p.is_organic,
+        "is_preorder": p.is_preorder,
         "description": p.description or "",
     }
+
+    if p.is_preorder:
+        status = p.preorder_status()
+        data["preorder"] = {
+            "state": status["state"],  # deadline_passed | full | open
+            "remaining": status["remaining"],  # qancha joy bor (open holida)
+            "threshold": p.preorder_threshold,
+            "deadline": p.preorder_deadline.isoformat() if p.preorder_deadline else None,
+        }
+
+    return data
 
 @ensure_csrf_cookie
 def home(request):
@@ -53,6 +65,7 @@ def home(request):
         "banners": banners,
         "products_data": [serialize_product(p) for p in first_products],
     }
+
     return render(request, "pages/home.html", context)
 
 
@@ -78,3 +91,14 @@ def products_api(request):
         "has_next": page_obj.has_next(),
         "next_page": page_obj.next_page_number() if page_obj.has_next() else None,
     })
+
+
+def cart_preorder_status(request):
+    ids = request.GET.get('ids', '').split(',')
+    ids = [int(x) for x in ids if x.isdigit()]
+
+    result = {}
+    for p in Product.objects.filter(id__in=ids, is_preorder=True):
+        result[str(p.id)] = p.preorder_status()
+
+    return JsonResponse({'preorder_status': result})

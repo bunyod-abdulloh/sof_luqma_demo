@@ -12,6 +12,7 @@ from apps.core.utils import verify_tg_token
 from apps.delivery.models import ServiceBranch, DeliveryService, Region, District, DeliveryConfig
 from apps.orders.models import Order, OrderItem
 from apps.products.models import Product
+from utils.build_order import build_order_message
 
 logger = logging.getLogger(__name__)
 
@@ -27,8 +28,7 @@ def checkout_view(request):
 
         # --- Auth ---
         telegram_id = verify_tg_token(data.get('tg_token', ''))
-        print(f"BU TELEGRAM_ID: {telegram_id}")
-        print(f"BU CHECKOUT DATA: {data}")
+
         if not telegram_id:
             return JsonResponse({'error': 'Invalid token'}, status=401)
 
@@ -177,14 +177,16 @@ def checkout_view(request):
                 for item in items
                 if item['product_id'] in products
             ])
-
-        send_order_to_telegram(
-            order=order,
-            products=products,
-            items=items,
-            delivery_data=delivery,
-        )
-        return JsonResponse({'success': True, 'order_id': order.id})
+        try:
+            send_order_to_telegram(
+                order=order,
+                products=products,
+                items=items,
+                delivery_data=delivery,
+            )
+            return JsonResponse({'success': True, 'order_id': order.id})
+        except Exception as e:
+            logger.error(f"Telegram yuborishda xato: {e}", exc_info=True)
 
     except json.JSONDecodeError:
         return JsonResponse({'error': 'Invalid JSON'}, status=400)
@@ -211,7 +213,7 @@ def send_order_to_telegram(order, products, items, delivery_data):
         )
     elif order.is_taxi:
         delivery_line = (
-            f"🚕 Taksi — {order.district}, {order.region}\n"
+            f"🚕 Taksi — {order.region}\n"
         )
     elif order.service and order.service.slug == 'uzpost':
         delivery_line = (
@@ -275,8 +277,9 @@ def send_order_to_telegram(order, products, items, delivery_data):
         result = response.json()
 
         if result.get("ok"):
-            order.telegram_message_id = result["result"]["message_id"]
-            order.save(update_fields=["telegram_message_id"])
+            Order.objects.filter(pk=order.id).update(
+                telegram_message_id=result["result"]["message_id"]
+            )
 
         if (
                 delivery_data.get('location')
@@ -294,3 +297,35 @@ def send_order_to_telegram(order, products, items, delivery_data):
                 },
                 timeout=10
             )
+
+
+def update_order_message(order):
+    """Mavjud Telegram xabarini yangi matn bilan tahrirlaydi."""
+    if not order.telegram_message_id:
+        return
+
+    message = build_order_message(order)
+
+    url = f"https://api.telegram.org/bot{settings.BOT_TOKEN}/editMessageText"
+    payload = {
+        "chat_id": settings.ORDERS_GROUP_ID,
+        "message_id": order.telegram_message_id,
+        "text": message,
+        "parse_mode": "HTML",
+        "reply_markup": {"inline_keyboard": [[
+            {"text": "✏️ O'zgartirish", "web_app": {
+                "url": f"{settings.WEB_APP_URL}/admin/orders/order/{order.id}/change/"
+            }}
+        ]]}
+    }
+
+    try:
+        with httpx.Client() as client:
+            response = client.post(url, json=payload, timeout=10)
+            # Telegram "message is not modified" qaytarsa, e'tibor bermaymiz
+            if response.status_code != 200:
+                data = response.json()
+                if "not modified" not in data.get("description", "").lower():
+                    logger.warning(f"Telegram edit xato: {data}")
+    except Exception as e:
+        logger.warning(f"Telegram update xato: {e}")

@@ -110,6 +110,15 @@ class Order(models.Model):
     def __str__(self):
         return f"Order #{self.id} — ({self.get_status_display()})"
 
+    def recalculate_total(self):
+        """OrderItem'lar yig'indisi + delivery narxi."""
+        items_total = sum(
+            (item.price * item.qty for item in self.items.all()),
+            0
+        )
+        self.total = items_total + (self.delivery_price or 0)
+        self.save(update_fields=["total"])
+
 
 class OrderItem(models.Model):
     order = models.ForeignKey(

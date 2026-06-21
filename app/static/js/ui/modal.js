@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { updateBadge } from './cart.js';
+import { updateBadge } from '../cart/cart.js';
 
 function saveCart() {
   localStorage.setItem('cart', JSON.stringify(state.cart));

@@ -1,5 +1,7 @@
 from django.db import models
+from django.db.models import Sum
 from django.templatetags.static import static
+from django.utils import timezone
 from django.utils.text import slugify
 
 
@@ -127,7 +129,7 @@ class Product(models.Model):
 
     preorder_threshold = models.PositiveIntegerField(
         default=0,
-        verbose_name="Buyurtmani tasdiqlash uchun minimal miqdor",
+        verbose_name="Buyurtmani tasdiqlash uchun maksimal miqdor",
     )
 
     preorder_deadline = models.DateTimeField(
@@ -138,6 +140,12 @@ class Product(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    preorder_period_started_at = models.DateTimeField(
+        null=True, blank=True,
+        verbose_name="Joriy qabul boshlangan vaqt",
+        help_text="Faqat shu vaqtdan keyingi buyurtmalar hisobga olinadi"
+    )
 
     class Meta:
         ordering = ["-created_at"]
@@ -151,10 +159,48 @@ class Product(models.Model):
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name, allow_unicode=False)
+
+        # Preorder yoqilgan bo'lsa, davr boshlanmagan bo'lsa — boshlang
+        if self.is_preorder and not self.preorder_period_started_at:
+            self.preorder_period_started_at = timezone.now()
+
         super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.name} ({self.category.name})"
+
+    def preorder_status(self):
+        if not self.is_preorder:
+            return {"state": "not_preorder", "reserved": 0, "remaining": None}
+
+        if self.preorder_deadline and self.preorder_deadline < timezone.now():
+            return {"state": "deadline_passed", "reserved": 0, "remaining": 0}
+
+        active_statuses = ["new", "confirmed", "in_delivery", "delivered"]
+        qs = self.order_items.filter(order__status__in=active_statuses)
+
+        # Faqat joriy davrdagi buyurtmalarni hisoblash
+        if self.preorder_period_started_at:
+            qs = qs.filter(order__created_at__gte=self.preorder_period_started_at)
+
+        reserved = qs.aggregate(total=Sum("qty"))["total"] or 0
+        remaining = max(self.preorder_threshold - reserved, 0)
+
+        if remaining == 0:
+            return {"state": "full", "reserved": reserved, "remaining": 0}
+
+        return {"state": "open", "reserved": reserved, "remaining": remaining}
+
+    def start_new_preorder_period(self, new_deadline=None, new_threshold=None):
+        """Yangi preorder davrini ochadi. Eski buyurtmalar yangi davrga ta'sir qilmaydi."""
+        self.preorder_period_started_at = timezone.now()
+        if new_deadline is not None:
+            self.preorder_deadline = new_deadline
+        if new_threshold is not None:
+            self.preorder_threshold = new_threshold
+        self.save(update_fields=[
+            "preorder_period_started_at", "preorder_deadline", "preorder_threshold"
+        ])
 
 
 class Banner(models.Model):

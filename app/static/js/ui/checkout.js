@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { getDeliveryPayload, renderCart, updateBadge } from './cart.js';
+import { getDeliveryPayload, renderCart, updateBadge } from '../cart/cart.js';
 
 function getCookie(name) {
   const cookies = document.cookie ? document.cookie.split('; ') : [];
