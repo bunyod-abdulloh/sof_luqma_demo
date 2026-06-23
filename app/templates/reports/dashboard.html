@@ -1,0 +1,55 @@
+{% extends "reports/_base.html" %}
+{% load reports_filters %}
+{% block report_title %}Dashboard{% endblock %}
+
+{% block report_content %}
+<p class="r-meta">
+    Davr: <strong>{{ date_range.label }}</strong>
+</p>
+
+<div class="r-kpi-grid r-kpi-grid--4">
+    <div class="r-card">
+        <div class="r-card-label">Jami buyurtma</div>
+        <div class="r-card-value">{{ kpis.total_orders }}</div>
+    </div>
+    <div class="r-card">
+        <div class="r-card-label">Jami summa</div>
+        <div class="r-card-value">{{ kpis.total_revenue|money }} so'm</div>
+    </div>
+    <div class="r-card">
+        <div class="r-card-label">Yetkazilgan</div>
+        <div class="r-card-value r-card-value--success">{{ kpis.delivered_count }}</div>
+    </div>
+    <div class="r-card">
+        <div class="r-card-label">Bekor qilingan</div>
+        <div class="r-card-value r-card-value--danger">{{ kpis.cancelled_count }}</div>
+    </div>
+</div>
+
+<h2 class="r-section-title">Hisobotlar bo'limi</h2>
+<div class="r-grid r-grid--3">
+    <a href="{% url 'reports:preorder' %}" class="r-link-card">
+        <span class="r-link-card-icon material-symbols-outlined">schedule</span>
+        <div class="r-link-card-body">
+            <div class="r-link-card-title">Preorder hisoboti</div>
+            <div class="r-link-card-meta">
+                Hozir <strong>{{ open_preorders }}</strong> ta ochiq preorder mavjud
+            </div>
+        </div>
+    </a>
+    <a href="{% url 'reports:products' %}" class="r-link-card">
+        <span class="r-link-card-icon material-symbols-outlined">shopping_cart</span>
+        <div class="r-link-card-body">
+            <div class="r-link-card-title">Mahsulotlar sotuvi</div>
+            <div class="r-link-card-meta">Har bir mahsulot bo'yicha kesim</div>
+        </div>
+    </a>
+    <a href="{% url 'reports:categories' %}" class="r-link-card">
+        <span class="r-link-card-icon material-symbols-outlined">category</span>
+        <div class="r-link-card-body">
+            <div class="r-link-card-title">Kategoriyalar sotuvi</div>
+            <div class="r-link-card-meta">Kategoriya bo'yicha hisobot</div>
+        </div>
+    </a>
+</div>
+{% endblock %}

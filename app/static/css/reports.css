@@ -1,0 +1,526 @@
+/* ========================================================================
+   Reports — Sof Luqma admin (Unfold-mos, dark-first)
+======================================================================== */
+
+
+/* ─── Section title ──────────────────────────────────────────────── */
+
+.r-section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-base-900, #111827);
+    margin: 1.75rem 0 0.75rem 0;
+}
+.dark .r-section-title { color: var(--color-base-50, #f9fafb); }
+
+
+/* ─── Meta satr ("Davr: ...") ────────────────────────────────────── */
+
+.r-meta {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-base-500, #6b7280);
+    margin-bottom: 1.25rem;
+}
+.r-meta strong {
+    color: var(--color-base-900, #111827);
+    font-weight: 600;
+}
+.dark .r-meta { color: var(--color-base-400, #9ca3af); }
+.dark .r-meta strong { color: var(--color-base-100, #f3f4f6); }
+
+
+/* ─── Filterlar paneli ────────────────────────────────────────────── */
+
+.r-filters {
+    background: var(--color-base-50, #ffffff);
+    border: 1px solid var(--color-base-200, #e5e7eb);
+    border-radius: 0.5rem;
+    padding: 1.15rem 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.dark .r-filters {
+    background: var(--color-base-900, #111827);
+    border-color: var(--color-base-700, #374151);
+}
+
+.r-filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+.r-filters-row + .r-filters-row { margin-top: 1rem; }
+
+.r-filter-group { display: flex; flex-direction: column; margin-top: 0.90rem;}
+.r-filter-group--grow { flex: 1; min-width: 200px; }
+
+.r-filter-label {
+    font-size: 0.75rem;
+    color: var(--color-base-600, #4b5563);
+    margin-bottom: 0.25rem;
+}
+.dark .r-filter-label { color: var(--color-base-300, #d1d5db); }
+
+
+/* ─── Input ───────────────────────────────────────────────────────── */
+
+.r-input {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--color-base-300, #d1d5db);
+    border-radius: 0.375rem;
+    background: var(--color-base-50, #ffffff);
+    color: var(--color-base-900, #111827);
+    font-size: 0.875rem;
+    font-family: inherit;
+}
+.r-input:focus {
+    outline: 2px solid var(--color-primary-500, #8b5cf6);
+    outline-offset: -1px;
+}
+.dark .r-input {
+    background: var(--color-base-800, #1f2937);
+    border-color: var(--color-base-600, #4b5563);
+    color: var(--color-base-100, #f3f4f6);
+}
+
+
+/* ─── Custom checkbox (mobilga ham mos) ───────────────────────────── */
+
+.r-checkbox-group { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+.r-checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-base-700, #374151);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.dark .r-checkbox-label { color: var(--color-base-200, #e5e7eb); }
+
+/* Native ko'rinishni o'chirish — barcha brauzerlar (iOS Safari, Firefox mobile) */
+.r-checkbox-label input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    flex-shrink: 0;
+    width: 1.15rem;
+    min-width: 1.15rem;
+    height: 1.15rem;
+    min-height: 1.15rem;
+    margin: 0;
+    padding: 0;
+    border: 1.5px solid var(--color-base-300, #d1d5db);
+    border-radius: 0.35rem;
+    background-color: var(--color-base-50, #ffffff);
+    background-image: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+.dark .r-checkbox-label input[type="checkbox"] {
+    background-color: var(--color-base-800, #1f2937);
+    border-color: var(--color-base-600, #4b5563);
+}
+
+.r-checkbox-label input[type="checkbox"]:hover {
+    border-color: var(--color-primary-500, #8b5cf6);
+}
+
+.r-checkbox-label input[type="checkbox"]:checked {
+    background-color: var(--color-primary-600, #7c3aed);
+    border-color: var(--color-primary-600, #7c3aed);
+}
+
+/* Belgi (checkmark) */
+.r-checkbox-label input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 0.34rem;
+    top: 0.13rem;
+    width: 0.3rem;
+    height: 0.58rem;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.r-checkbox-label input[type="checkbox"]:focus-visible {
+    outline: 2px solid var(--color-primary-500, #8b5cf6);
+    outline-offset: 2px;
+}
+
+
+/* ─── Chiplar (Bugun / Shu hafta / ...) ────────────────────────────── */
+
+.r-chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.r-chip {
+    padding: 0.45rem 0.85rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    text-decoration: none;
+    background: var(--color-base-100, #f3f4f6);
+    color: var(--color-base-700, #374151);
+    border: 1px solid var(--color-base-200, #e5e7eb);
+    transition: background 0.15s;
+}
+.r-chip:hover { background: var(--color-base-200, #e5e7eb); }
+
+.dark .r-chip {
+    background: var(--color-base-800, #1f2937);
+    color: var(--color-base-200, #e5e7eb);
+    border-color: var(--color-base-700, #374151);
+}
+.dark .r-chip:hover { background: var(--color-base-700, #374151); }
+
+/* Active chip — boshqa qoidalardan ustun kelishi uchun ikki klass bilan */
+.r-chip.r-chip--active,
+.r-chip.r-chip--active:hover,
+.dark .r-chip.r-chip--active,
+.dark .r-chip.r-chip--active:hover {
+    background: var(--color-primary-600, #7c3aed);
+    color: #ffffff;
+    border-color: var(--color-primary-600, #7c3aed);
+}
+
+
+/* ─── Tugma (Filtrlash) ──────────────────────────────────────────── */
+
+.r-btn {
+    padding: 0.5rem 1.15rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+}
+.r-btn--primary {
+    background: var(--color-primary-600, #7c3aed);
+    color: #ffffff;
+}
+.r-btn--primary:hover { background: var(--color-primary-700, #6d28d9); }
+
+
+/* ─── KPI kartochkalar ────────────────────────────────────────────── */
+
+.r-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+    .r-kpi-grid--3 { grid-template-columns: repeat(3, 1fr); }
+    .r-kpi-grid--4 { grid-template-columns: repeat(4, 1fr); }
+    .r-kpi-grid--5 { grid-template-columns: repeat(5, 1fr); }
+}
+
+.r-card {
+    background: var(--color-base-50, #ffffff);
+    border: 1px solid var(--color-base-200, #e5e7eb);
+    border-radius: 0.5rem;
+    padding: 1rem 1.15rem;
+    line-height: 1.4;
+}
+.dark .r-card {
+    background: var(--color-base-900, #111827);
+    border-color: var(--color-base-700, #374151);
+}
+
+.r-card-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: var(--color-base-500, #6b7280);
+    margin-bottom: 0.4rem;
+}
+.dark .r-card-label { color: var(--color-base-400, #9ca3af); }
+
+.r-card-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-base-900, #111827);
+}
+.dark .r-card-value { color: var(--color-base-50, #f9fafb); }
+
+.r-card-value--success { color: #16a34a; }
+.r-card-value--warning { color: #d97706; }
+.r-card-value--danger  { color: #dc2626; }
+.dark .r-card-value--success { color: #4ade80; }
+.dark .r-card-value--warning { color: #fbbf24; }
+.dark .r-card-value--danger  { color: #f87171; }
+
+
+/* ─── Dashboard link kartochkalar grid'i ──────────────────────────── */
+
+.r-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.75rem;
+}
+@media (min-width: 768px) {
+    .r-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+/* ─── Link kartochkalar (dashboard plitkalari) ────────────────────── */
+
+.r-link-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    background: var(--color-base-50, #ffffff);
+    border: 1px solid var(--color-base-200, #e5e7eb);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s;
+}
+.r-link-card:hover {
+    border-color: var(--color-primary-500, #8b5cf6);
+    transform: translateY(-1px);
+}
+.dark .r-link-card {
+    background: var(--color-base-900, #111827);
+    border-color: var(--color-base-700, #374151);
+}
+
+.r-link-card-icon {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.65rem;
+    background: var(--color-primary-50, #f5f3ff);
+    color: var(--color-primary-600, #7c3aed);
+    font-size: 1.4rem;
+}
+.dark .r-link-card-icon {
+    background: rgba(124, 58, 237, 0.18);
+    color: var(--color-primary-400, #a78bfa);
+}
+
+.r-link-card-body { flex: 1; min-width: 0; }
+
+.r-link-card-title {
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-base-900, #111827);
+}
+.dark .r-link-card-title { color: var(--color-base-50, #f9fafb); }
+
+.r-link-card-meta {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-top: 0.35rem;
+    color: var(--color-base-500, #6b7280);
+}
+.dark .r-link-card-meta { color: var(--color-base-400, #9ca3af); }
+
+
+/* ─── Material Symbols ikonkalar ──────────────────────────────────── */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+
+/* ─── Jadval ──────────────────────────────────────────────────────── */
+
+.r-table-wrap {
+    overflow-x: auto;
+    background: var(--color-base-50, #ffffff);
+    border: 1px solid var(--color-base-200, #e5e7eb);
+    border-radius: 0.5rem;
+}
+.dark .r-table-wrap {
+    background: var(--color-base-900, #111827);
+    border-color: var(--color-base-700, #374151);
+}
+
+.r-table {
+    width: 100%;
+    font-size: 0.875rem;
+    border-collapse: collapse;
+}
+
+.r-table thead {
+    background: var(--color-base-100, #f9fafb);
+    color: var(--color-base-600, #4b5563);
+}
+.dark .r-table thead {
+    background: var(--color-base-800, #1f2937);
+    color: var(--color-base-300, #d1d5db);
+}
+
+.r-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+.r-table td {
+    padding: 0.85rem 1rem;
+    line-height: 1.45;
+    vertical-align: middle;
+    border-top: 1px solid var(--color-base-200, #e5e7eb);
+    color: var(--color-base-800, #1f2937);
+}
+.dark .r-table td {
+    border-top-color: var(--color-base-700, #374151);
+    color: var(--color-base-100, #f3f4f6);
+}
+
+.r-table tbody tr:hover { background: var(--color-base-100, #f9fafb); }
+.dark .r-table tbody tr:hover { background: var(--color-base-800, #1f2937); }
+
+.r-table .text-right { text-align: right; }
+.r-table .text-muted {
+    color: var(--color-base-500, #6b7280);
+    font-size: 0.75rem;
+}
+.dark .r-table .text-muted { color: var(--color-base-400, #9ca3af); }
+
+.r-table-link {
+    color: var(--color-primary-600, #7c3aed);
+    text-decoration: none;
+}
+.r-table-link:hover { text-decoration: underline; }
+.dark .r-table-link { color: var(--color-primary-400, #a78bfa); }
+
+.r-table-empty {
+    padding: 2.5rem 0.75rem;
+    text-align: center;
+    color: var(--color-base-500, #6b7280);
+}
+
+
+/* ─── Status badge ────────────────────────────────────────────────── */
+
+.r-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border-radius: 9999px;
+}
+.r-badge--open    { background: #dcfce7; color: #166534; }
+.r-badge--full    { background: #fef3c7; color: #92400e; }
+.r-badge--expired { background: #fee2e2; color: #991b1b; }
+.dark .r-badge--open    { background: #14532d; color: #bbf7d0; }
+.dark .r-badge--full    { background: #78350f; color: #fde68a; }
+.dark .r-badge--expired { background: #7f1d1d; color: #fecaca; }
+
+
+/* ─── Progress (preorder) ─────────────────────────────────────────── */
+
+.r-progress {
+    width: 7rem;
+    height: 0.45rem;
+    background: var(--color-base-200, #e5e7eb);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.dark .r-progress { background: var(--color-base-700, #374151); }
+
+.r-progress-bar { height: 100%; }
+.r-progress-bar--open    { background: #16a34a; }
+.r-progress-bar--full    { background: #d97706; }
+.r-progress-bar--expired { background: #dc2626; }
+
+.r-progress-pct {
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    color: var(--color-base-500, #6b7280);
+}
+.dark .r-progress-pct { color: var(--color-base-400, #9ca3af); }
+
+
+/* ─── Share bar (kategoriya ulushi) ───────────────────────────────── */
+
+.r-share { display: flex; align-items: center; gap: 0.5rem; }
+
+.r-share-track {
+    flex: 1;
+    height: 0.5rem;
+    background: var(--color-base-200, #e5e7eb);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    min-width: 100px;
+}
+.dark .r-share-track { background: var(--color-base-700, #374151); }
+
+.r-share-bar {
+    height: 100%;
+    background: var(--color-primary-600, #7c3aed);
+}
+
+.r-share-pct {
+    font-size: 0.75rem;
+    width: 3rem;
+    text-align: right;
+    color: var(--color-base-500, #6b7280);
+}
+.dark .r-share-pct { color: var(--color-base-400, #9ca3af); }
+
+
+/* ─── Pagination ──────────────────────────────────────────────────── */
+
+.r-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+.r-pagination-info { color: var(--color-base-500, #6b7280); }
+.dark .r-pagination-info { color: var(--color-base-400, #9ca3af); }
+
+.r-pagination-actions { display: flex; gap: 0.5rem; }
+
+.r-page-btn {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--color-base-300, #d1d5db);
+    border-radius: 0.375rem;
+    color: var(--color-base-700, #374151);
+    text-decoration: none;
+    background: var(--color-base-50, #ffffff);
+}
+.r-page-btn:hover { background: var(--color-base-100, #f3f4f6); }
+.r-page-btn--disabled {
+    color: var(--color-base-400, #9ca3af);
+    border-color: var(--color-base-200, #e5e7eb);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.dark .r-page-btn {
+    background: var(--color-base-900, #111827);
+    border-color: var(--color-base-600, #4b5563);
+    color: var(--color-base-200, #e5e7eb);
+}
+.dark .r-page-btn:hover { background: var(--color-base-800, #1f2937); }
+
+
+/* ─── Yordamchi matn class'lar ────────────────────────────────────── */
+
+.r-light-text { color: var(--color-base-600, #4b5563); }
+.dark .r-light-text { color: var(--color-base-300, #d1d5db); }
+
+.r-muted-cell { color: var(--color-base-400, #9ca3af); }

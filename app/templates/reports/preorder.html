@@ -1,0 +1,104 @@
+{% extends "reports/_base.html" %}
+{% load reports_filters %}
+{% block extra_breadcrumb %}
+<span class="r-breadcrumbs-sep">/</span>
+<span class="r-breadcrumbs-current">Preorder hisoboti</span>
+{% endblock %}
+{% block report_content %}
+<p class="r-meta">
+    Davr: <strong>{{ date_range.label }}</strong>
+    · Statuslar: <strong>
+    {% if ctx_statuses %}{{ ctx_statuses|join:", " }}
+    {% else %}Yangi, Tasdiqlangan, Yetkazildi{% endif %}
+</strong>
+</p>
+
+<div class="r-kpi-grid r-kpi-grid--5">
+    <div class="r-card">
+        <div class="r-card-label">Jami mahsulot</div>
+        <div class="r-card-value">{{ summary.total_products }}</div>
+    </div>
+    <div class="r-card">
+        <div class="r-card-label">Ochiq</div>
+        <div class="r-card-value r-card-value--success">{{ summary.open }}</div>
+    </div>
+    <div class="r-card">
+        <div class="r-card-label">To'ldi</div>
+        <div class="r-card-value r-card-value--warning">{{ summary.full }}</div>
+    </div>
+    <div class="r-card">
+        <div class="r-card-label">Muddat o'tgan</div>
+        <div class="r-card-value r-card-value--danger">{{ summary.deadline_passed }}</div>
+    </div>
+    <div class="r-card">
+        <div class="r-card-label">Jami zaxiralandi</div>
+        <div class="r-card-value">{{ summary.total_reserved }}</div>
+    </div>
+</div>
+
+<div class="r-table-wrap">
+    <table class="r-table">
+        <thead>
+        <tr>
+            <th>Mahsulot</th>
+            <th>Kategoriya</th>
+            <th class="text-right">Limit</th>
+            <th class="text-right">Zaxira</th>
+            <th class="text-right">Qolgan</th>
+            <th>Progress</th>
+            <th>Qabul boshlanishi</th>
+            <th>Qabul tugashi</th>
+            <th>Holati</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for r in results %}
+        <tr>
+            <td>
+                <a href="/admin/products/product/{{ r.product.id }}/change/" class="r-table-link">
+                    {{ r.product.name }}
+                </a>
+                {% if not r.product.is_available %}
+                <span class="r-muted-cell text-muted">(sotuvda yo'q)</span>
+                {% endif %}
+            </td>
+            <td class="r-light-text">{{ r.product.category.name }}</td>
+            <td class="text-right">
+                {% if r.threshold %}{{ r.threshold }}{% else %}<span class="r-muted-cell">—</span>{% endif %}
+            </td>
+            <td class="text-right"><strong>{{ r.reserved }}</strong></td>
+            <td class="text-right">
+                {% if r.threshold %}{{ r.remaining }}{% else %}<span class="r-muted-cell">—</span>{% endif %}
+            </td>
+            <td>
+                {% if r.threshold %}
+                <div class="r-progress">
+                    <div class="r-progress-bar r-progress-bar--{{ r.state }}"
+                         style="width: {{ r.pct }}%;"></div>
+                </div>
+                <div class="r-progress-pct">{{ r.pct }}%</div>
+                {% else %}
+                <span class="r-muted-cell text-muted">limit yo'q</span>
+                {% endif %}
+            </td>
+            <td class="text-muted">
+                {% if r.period_started_at %}{{ r.period_started_at|date:"d.m.Y H:i" }}
+                {% else %}<span class="r-muted-cell">—</span>{% endif %}
+            </td>
+            <td class="text-muted">
+                {% if r.deadline %}{{ r.deadline|date:"d.m.Y H:i" }}
+                {% else %}<span class="r-muted-cell">—</span>{% endif %}
+            </td>
+            <td>
+                <span class="r-badge r-badge--{{ r.state }}">{{ r.state_label }}</span>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="9" class="r-table-empty">Preorder mahsulotlar topilmadi</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

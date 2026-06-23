@@ -73,6 +73,14 @@ class OrderAdmin(ModelAdmin):
     def total_display(self, obj):
         return f"{obj.total:,}".replace(",", " ") + " so'm"
 
+    @display(description="Yig'ilgan")
+    def reserved_qty(self, obj):
+        return obj.preorder_status()["reserved"]
+
+    @display(description="Qoldi")
+    def remaining_qty(self, obj):
+        return obj.preorder_status()["remaining"]
+
     # ── Bir bosishli qator amallari ──
     @action(description=_("Tasdiqlash"), icon="check", variant=ActionVariant.SUCCESS)
     def row_confirm(self, request, object_id):

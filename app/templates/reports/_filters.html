@@ -1,0 +1,44 @@
+<div class="r-filters">
+    <form method="get">
+
+        {# YASHIRIN QUICK — checkbox o'zgarganda quick yo'qolmasligi uchun #}
+        <input type="hidden" name="quick" value="{{ date_range.quick }}">
+
+        {# Quick range chiplari #}
+        <div class="r-chip-row">
+            {% for code, label in quick_ranges %}
+            <a href="?quick={{ code }}{% if qs_no_quick %}&{{ qs_no_quick }}{% endif %}"
+               class="r-chip {% if date_range.quick == code %}r-chip--active{% endif %}">
+                {{ label }}
+            </a>
+            {% endfor %}
+        </div>
+
+        <div class="r-filters-row">
+            <div class="r-filter-group">
+                <label class="r-filter-label">Boshlanish</label>
+                <input type="date" name="start" value="{{ date_range.start_str }}" class="r-input">
+            </div>
+            <div class="r-filter-group">
+                <label class="r-filter-label">Tugash</label>
+                <input type="date" name="end" value="{{ date_range.end_str }}" class="r-input">
+            </div>
+
+            <div class="r-filter-group r-filter-group--grow">
+                <label class="r-filter-label">Buyurtma holati</label>
+                <div class="r-checkbox-group">
+                    {% for code, label in all_statuses %}
+                    <label class="r-checkbox-label">
+                        <input type="checkbox" name="status" value="{{ code }}"
+                               {% if code in statuses %}checked{% endif %}
+                               onchange="this.form.submit()">
+                        <span>{{ label }}</span>
+                    </label>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <button type="submit" class="r-btn r-btn--primary">Filtrlash</button>
+        </div>
+    </form>
+</div>

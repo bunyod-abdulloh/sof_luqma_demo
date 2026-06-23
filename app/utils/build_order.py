@@ -45,7 +45,7 @@ def build_order_message(order):
     payment_type = order.get_payment_type_display() if order.payment_type else "—"
 
     return (
-        f"#ID{order.id} | {now.strftime('%d.%m.%Y %H:%M')}\n\n"
+        f"#sana{now.strftime('%d_%m_%Y')} | {now.strftime('%H:%M')}\n\n"
         f"🛒 <b>Buyurtma</b>\n\n"
         f"📌 Holati: {order.get_status_display()}\n\n"
         f"👤 Ism: {order.client.full_name if order.client else '—'}\n"
